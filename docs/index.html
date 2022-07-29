@@ -1,0 +1,1103 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-tap-highlight-color:transparent;background-color:transparent;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQwIDcwSDIwVjUwbTIwIDBMMjAgNzBtNDAtNDBoMjB2MjBtLTIwIDAgMjAtMjAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIwIDUwaDIwdjIwbS0yMCAwIDIwLTIwbTQwIDBINjBWMzBtMjAgMEw2MCA1MCIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS13aWR0aDo1cHh9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yMCA2MGgtNWE1IDUgMCAwIDEtNS01VjIwYTUgNSAwIDAgMSA1LTVoNjBhNSA1IDAgMCAxIDUgNXY1TTMwIDg1aDYwIi8+PHJlY3QgeD0iMzAiIHk9IjM1IiB3aWR0aD0iNjAiIGhlaWdodD0iNDAiIHJ4PSI1IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiLz48cmVjdCBjbGFzcz0iYSIgeD0iMzAiIHk9IjM1IiB3aWR0aD0iNjAiIGhlaWdodD0iNDAiIHJ4PSI1Ii8+PHBhdGggY2xhc3M9ImEiIGQ9Ik00MCA1MGg0ME00MCA2MGgzMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{-webkit-animation-name:__bespoke_marp__!important;animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{bottom:0;left:0;position:absolute;right:0;top:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{background:rgba(0,0,0,.65);border-radius:7px;bottom:50px;color:#fff;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;will-change:transform;z-index:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:transparent}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template-areas:"current next" "current note" "info    note";grid-template-columns:2fr 1fr;grid-template-rows:minmax(140px,1fr) 2fr 3em;height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:transparent;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{word-wrap:break-word;scrollbar-width:thin;scrollbar-color:hsla(0,0%,93.3%,.5) transparent;box-sizing:border-box;font-size:1.1em;height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;white-space:pre-wrap;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:hsla(0,0%,93.3%,.5);border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>@charset "UTF-8";@import url("https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:400,700&display=swap");div#p>svg>foreignObject>section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center}div#p>svg>foreignObject>section:after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#p>svg>foreignObject>section:not([data-marpit-pagination]):after{display:none}/* Normalization */div#p>svg>foreignObject>section h1{font-size:2em;margin:0.67em 0}div#p>svg>foreignObject>section video::-webkit-media-controls{will-change:transform}@page{size:1280px 720px;margin:0}@media print{body,html{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#p>svg>foreignObject>section{page-break-before:always;break-before:page}div#p>svg>foreignObject>section,div#p>svg>foreignObject>section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;transition:none!important}div#p>svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}
+/*!
+ * Marp / Marpit Gaia theme.
+ *
+ * @theme gaia
+ * @author Yuki Hattori
+ *
+ * @auto-scaling true
+ * @size 4:3 960px 720px
+ */div#p>svg>foreignObject>section .hljs{background:#000;color:#f8f8f8;display:block;overflow-x:auto;padding:.5em}div#p>svg>foreignObject>section .hljs-comment,div#p>svg>foreignObject>section .hljs-quote{color:#aeaeae;font-style:italic}div#p>svg>foreignObject>section .hljs-keyword,div#p>svg>foreignObject>section .hljs-selector-tag,div#p>svg>foreignObject>section .hljs-type{color:#e28964}div#p>svg>foreignObject>section .hljs-string{color:#65b042}div#p>svg>foreignObject>section .hljs-subst{color:#daefa3}div#p>svg>foreignObject>section .hljs-link,div#p>svg>foreignObject>section .hljs-regexp{color:#e9c062}div#p>svg>foreignObject>section .hljs-name,div#p>svg>foreignObject>section .hljs-section,div#p>svg>foreignObject>section .hljs-tag,div#p>svg>foreignObject>section .hljs-title{color:#89bdff}div#p>svg>foreignObject>section .hljs-class .hljs-title,div#p>svg>foreignObject>section .hljs-doctag{text-decoration:underline}div#p>svg>foreignObject>section .hljs-bullet,div#p>svg>foreignObject>section .hljs-number,div#p>svg>foreignObject>section .hljs-symbol{color:#3387cc}div#p>svg>foreignObject>section .hljs-params,div#p>svg>foreignObject>section .hljs-template-variable,div#p>svg>foreignObject>section .hljs-variable{color:#3e87e3}div#p>svg>foreignObject>section .hljs-attribute{color:#cda869}div#p>svg>foreignObject>section .hljs-meta{color:#8996a8}div#p>svg>foreignObject>section .hljs-formula{background-color:#0e2231;color:#f8f8f8;font-style:italic}div#p>svg>foreignObject>section .hljs-addition{background-color:#253b22;color:#f8f8f8}div#p>svg>foreignObject>section .hljs-deletion{background-color:#420e09;color:#f8f8f8}div#p>svg>foreignObject>section .hljs-selector-class{color:#9b703f}div#p>svg>foreignObject>section .hljs-selector-id{color:#8b98ab}div#p>svg>foreignObject>section .hljs-emphasis{font-style:italic}div#p>svg>foreignObject>section .hljs-strong{font-weight:700}div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{max-height:580px}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2,div#p>svg>foreignObject>section h3,div#p>svg>foreignObject>section h4,div#p>svg>foreignObject>section h5,div#p>svg>foreignObject>section h6{margin:.5em 0 0}div#p>svg>foreignObject>section h1 strong,div#p>svg>foreignObject>section h2 strong,div#p>svg>foreignObject>section h3 strong,div#p>svg>foreignObject>section h4 strong,div#p>svg>foreignObject>section h5 strong,div#p>svg>foreignObject>section h6 strong{font-weight:inherit}div#p>svg>foreignObject>section h1{font-size:1.8em}div#p>svg>foreignObject>section h2{font-size:1.5em}div#p>svg>foreignObject>section h3{font-size:1.3em}div#p>svg>foreignObject>section h4{font-size:1.1em}div#p>svg>foreignObject>section h5{font-size:1em}div#p>svg>foreignObject>section h6{font-size:.9em}div#p>svg>foreignObject>section blockquote,div#p>svg>foreignObject>section p{margin:1em 0 0}div#p>svg>foreignObject>section ol>li,div#p>svg>foreignObject>section ul>li{margin:.3em 0 0}div#p>svg>foreignObject>section ol>li>p,div#p>svg>foreignObject>section ul>li>p{margin:.6em 0 0}div#p>svg>foreignObject>section code{display:inline-block;font-family:Roboto Mono,monospace;font-size:.8em;letter-spacing:0;margin:-.1em .15em;padding:.1em .2em;vertical-align:baseline}div#p>svg>foreignObject>section pre{display:block;margin:1em 0 0;min-height:1em;overflow:visible}div#p>svg>foreignObject>section pre code{box-sizing:border-box;font-size:.7em;margin:0;min-width:100%;padding:.5em}div#p>svg>foreignObject>section pre code svg[data-marp-fitting=svg]{max-height:calc(580px - 1em)}div#p>svg>foreignObject>section blockquote{margin:1em 0 0;padding:0 1em;position:relative}div#p>svg>foreignObject>section blockquote:after,div#p>svg>foreignObject>section blockquote:before{content:"“";display:block;font-family:Times New Roman,serif;font-weight:700;position:absolute}div#p>svg>foreignObject>section blockquote:before{left:0;top:0}div#p>svg>foreignObject>section blockquote:after{bottom:0;right:0;transform:rotate(180deg)}div#p>svg>foreignObject>section blockquote>:first-child{margin-top:0}div#p>svg>foreignObject>section mark{background:transparent}div#p>svg>foreignObject>section table{border-collapse:collapse;border-spacing:0;margin:1em 0 0}div#p>svg>foreignObject>section table td,div#p>svg>foreignObject>section table th{border-style:solid;border-width:1px;padding:.2em .4em}div#p>svg>foreignObject>section:after,div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header{box-sizing:border-box;font-size:66%;height:70px;line-height:50px;overflow:hidden;padding:10px 25px;position:absolute}div#p>svg>foreignObject>section:after{--marpit-root-font-size:66%}div#p>svg>foreignObject>section header{top:0}div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header{left:0;right:0}div#p>svg>foreignObject>section footer{bottom:0}div#p>svg>foreignObject>section{word-wrap:break-word;--color-background:#fff8e1;--color-background-stripe:rgba(69,90,100,0.1);--color-foreground:#455a64;--color-dimmed:#6a7a7d;--color-highlight:#0288d1;background-color:var(--color-background);background-image:linear-gradient(135deg,hsla(0,0%,53.3%,0),hsla(0,0%,53.3%,.02) 50%,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.05));color:var(--color-foreground);font-family:Lato,Avenir Next,Avenir,Trebuchet MS,Segoe UI,sans-serif;font-size:35px;height:720px;letter-spacing:1.25px;line-height:1.35;padding:70px;width:1280px}div#p>svg>foreignObject>section{--marpit-root-font-size:35px}div#p>svg>foreignObject>section:after{bottom:0;font-size:80%;right:0}div#p>svg>foreignObject>section:after{--marpit-root-font-size:80%}div#p>svg>foreignObject>section a,div#p>svg>foreignObject>section mark{color:var(--color-highlight)}div#p>svg>foreignObject>section code{background:var(--color-dimmed);color:var(--color-background)}div#p>svg>foreignObject>section h1 strong,div#p>svg>foreignObject>section h2 strong,div#p>svg>foreignObject>section h3 strong,div#p>svg>foreignObject>section h4 strong,div#p>svg>foreignObject>section h5 strong,div#p>svg>foreignObject>section h6 strong{color:var(--color-highlight)}div#p>svg>foreignObject>section pre>code{background:var(--color-foreground)}div#p>svg>foreignObject>section blockquote:after,div#p>svg>foreignObject>section blockquote:before,div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header,div#p>svg>foreignObject>section section:after{color:var(--color-dimmed)}div#p>svg>foreignObject>section table td,div#p>svg>foreignObject>section table th{border-color:var(--color-foreground)}div#p>svg>foreignObject>section table thead th{background:var(--color-foreground);color:var(--color-background)}div#p>svg>foreignObject>section table tbody>tr:nth-child(odd) td,div#p>svg>foreignObject>section table tbody>tr:nth-child(odd) th{background:var(--color-background-stripe,transparent)}div#p>svg>foreignObject>section>:first-child,div#p>svg>foreignObject>section>header:first-child+*{margin-top:0}div#p>svg>foreignObject>section.invert{--color-background:#455a64;--color-background-stripe:rgba(255,248,225,0.1);--color-foreground:#fff8e1;--color-dimmed:#dad8c8;--color-highlight:#81d4fa}div#p>svg>foreignObject>section.gaia{--color-background:#0288d1;--color-background-stripe:rgba(255,248,225,0.1);--color-foreground:#fff8e1;--color-dimmed:#cce2de;--color-highlight:#81d4fa}div#p>svg>foreignObject>section.lead{display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:center}div#p>svg>foreignObject>section.lead h1,div#p>svg>foreignObject>section.lead h2,div#p>svg>foreignObject>section.lead h3,div#p>svg>foreignObject>section.lead h4,div#p>svg>foreignObject>section.lead h5,div#p>svg>foreignObject>section.lead h6{text-align:center}div#p>svg>foreignObject>section.lead h1 svg[data-marp-fitting=svg],div#p>svg>foreignObject>section.lead h2 svg[data-marp-fitting=svg],div#p>svg>foreignObject>section.lead h3 svg[data-marp-fitting=svg],div#p>svg>foreignObject>section.lead h4 svg[data-marp-fitting=svg],div#p>svg>foreignObject>section.lead h5 svg[data-marp-fitting=svg],div#p>svg>foreignObject>section.lead h6 svg[data-marp-fitting=svg]{--preserve-aspect-ratio:xMidYMid meet}div#p>svg>foreignObject>section.lead p{text-align:center}div#p>svg>foreignObject>section.lead blockquote>h1,div#p>svg>foreignObject>section.lead blockquote>h2,div#p>svg>foreignObject>section.lead blockquote>h3,div#p>svg>foreignObject>section.lead blockquote>h4,div#p>svg>foreignObject>section.lead blockquote>h5,div#p>svg>foreignObject>section.lead blockquote>h6,div#p>svg>foreignObject>section.lead blockquote>p{text-align:left}div#p>svg>foreignObject>section.lead blockquote svg[data-marp-fitting=svg]:not([data-marp-fitting-math]){--preserve-aspect-ratio:xMinYMin meet}div#p>svg>foreignObject>section.lead ol>li>p,div#p>svg>foreignObject>section.lead ul>li>p{text-align:left}div#p>svg>foreignObject>section.lead table{margin-left:auto;margin-right:auto}div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{display:block;height:auto;width:100%}@supports (-ms-ime-align:auto){div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{position:static}}div#p>svg>foreignObject>section svg[data-marp-fitting=svg].__reflow__{content:""}@supports (-ms-ime-align:auto){div#p>svg>foreignObject>section svg[data-marp-fitting=svg].__reflow__{position:relative}}div#p>svg>foreignObject>section [data-marp-fitting-svg-content]{display:table;white-space:nowrap;width:-webkit-max-content;width:-moz-max-content;width:max-content}div#p>svg>foreignObject>section [data-marp-fitting-svg-content-wrap]{white-space:pre}div#p>svg>foreignObject>section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}
+
+/* @theme kubi */div#p>svg>foreignObject>section .two-columns ul{display:grid;grid-template-columns:1fr 1fr}div#p>svg>foreignObject>section pre{margin-top:1em}div#p>svg>foreignObject>section .language-ts,div#p>svg>foreignObject>section .language-ts .hljs-function .hljs-title,div#p>svg>foreignObject>section .language-ts .hljs-subst{background-color:white;color:black;font-weight:normal;padding:0px}div#p>svg>foreignObject>section .language-ts .hljs-function .hljs-keyword,div#p>svg>foreignObject>section .language-ts .hljs-keyword{color:#0000ff}div#p>svg>foreignObject>section .language-ts .hljs-built_in{color:#365bca}div#p>svg>foreignObject>section .language-ts .hljs-params{color:unset}div#p>svg>foreignObject>section .language-ts .hljs-string{color:#a31515}div#p>svg>foreignObject>section question>p{display:inline;margin-top:0px}div#p>svg>foreignObject>section question{display:block;margin-top:20px;margin-bottom:20px}div#p>svg>foreignObject>section question:before{content:"Question:";font-weight:bold}div#p>svg>foreignObject>section answer{display:block}div#p>svg>foreignObject>section answer:before{content:"Answer:";font-weight:bold}div#p>svg>foreignObject>section answer>p{display:inline;margin-top:0px}div#p>svg>foreignObject>section{background:white;color:#223355}div#p>svg>foreignObject>section li>pre{margin-top:0px}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2,div#p>svg>foreignObject>section h3{color:#182848}div#p>svg>foreignObject>section footer{height:auto;padding:0 8px 2px 8px;font-size:10px;line-height:1;letter-spacing:0.9px;text-align:left}div#p>svg>foreignObject>section footer img{display:block;height:31px;margin-bottom:8px;margin-left:-8px}div#p>svg>foreignObject>section footer img:last-child{height:28px;position:fixed;right:12px;bottom:8px}
+
+/* make title emojis bigger */div#p>svg>foreignObject>section h1>img[data-marp-twemoji]{height:3em;width:3em}div#p>svg>foreignObject>section :not(pre)>code{color:rgb(190,68,135);background:#eaeaea;border-radius:8px}div#p>svg>foreignObject>section pre>code{background:#282a36;color:#f8f8f2}div#p>svg>foreignObject>section .hljs-title{text-decoration:none!important}div#p>svg>foreignObject>section.lead{background:#4b6cb7;  /* fallback for old browsers */background:-webkit-linear-gradient(to right,#182848,#4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */background:linear-gradient(to right,#182848,#4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */color:white}div#p>svg>foreignObject>section.lead h1{color:white}div#p>svg>foreignObject>section.lead.title h1{font-size:96px}div#p>svg>foreignObject>section.lead h1{font-size:96px}div#p>svg>foreignObject>section.lead.image{background-repeat:no-repeat;background-size:cover;background-position:center}div#p>svg>foreignObject>section.image figcaption{font-size:11px;position:fixed;opacity:.8;right:16px;bottom:16px;text-align:right}div#p>svg>foreignObject>section.about-us{columns:2;text-align:center}div#p>svg>foreignObject>section.about-us p>img{width:200px;height:200px;border-radius:100px}div#p>svg>foreignObject>section.about-us ul{margin-top:32px;text-align:left;font-size:24px;list-style-type:none}
+
+/* make nested lists smaller */div#p>svg>foreignObject>section li>ul{font-size:32px}
+
+/* custom classes */div#p>svg>foreignObject>section .added{color:rgb(16,172,112);font-family:monospace}div#p>svg>foreignObject>section .removed{color:rgb(235,61,61);font-family:monospace}
+
+/* highlight.js */
+
+/*
+
+Dracula Theme v1.2.0
+
+https://github.com/zenorocha/dracula-theme
+
+Copyright 2015, All rights reserved
+
+Code licensed under the MIT license
+http://zenorocha.mit-license.org
+
+@author Éverton Ribeiro <nuxlli@gmail.com>
+@author Zeno Rocha <hi@zenorocha.com>
+
+*/div#p>svg>foreignObject>section .hljs{display:block;overflow-x:auto;padding:0.5em;background:#282a36}div#p>svg>foreignObject>section .hljs-keyword,div#p>svg>foreignObject>section .hljs-link,div#p>svg>foreignObject>section .hljs-literal,div#p>svg>foreignObject>section .hljs-section,div#p>svg>foreignObject>section .hljs-selector-tag{color:#8be9fd}div#p>svg>foreignObject>section .hljs-function .hljs-keyword{color:#ff79c6}div#p>svg>foreignObject>section .hljs,div#p>svg>foreignObject>section .hljs-subst{color:#f8f8f2}div#p>svg>foreignObject>section .hljs-addition,div#p>svg>foreignObject>section .hljs-attribute,div#p>svg>foreignObject>section .hljs-bullet,div#p>svg>foreignObject>section .hljs-name,div#p>svg>foreignObject>section .hljs-string,div#p>svg>foreignObject>section .hljs-symbol,div#p>svg>foreignObject>section .hljs-template-tag,div#p>svg>foreignObject>section .hljs-template-variable,div#p>svg>foreignObject>section .hljs-title,div#p>svg>foreignObject>section .hljs-type,div#p>svg>foreignObject>section .hljs-variable{color:#f1fa8c}div#p>svg>foreignObject>section .hljs-comment,div#p>svg>foreignObject>section .hljs-deletion,div#p>svg>foreignObject>section .hljs-meta,div#p>svg>foreignObject>section .hljs-quote{color:#6272a4}div#p>svg>foreignObject>section .hljs-doctag,div#p>svg>foreignObject>section .hljs-keyword,div#p>svg>foreignObject>section .hljs-literal,div#p>svg>foreignObject>section .hljs-name,div#p>svg>foreignObject>section .hljs-section,div#p>svg>foreignObject>section .hljs-selector-tag,div#p>svg>foreignObject>section .hljs-strong,div#p>svg>foreignObject>section .hljs-title,div#p>svg>foreignObject>section .hljs-type{font-weight:bold}div#p>svg>foreignObject>section .hljs-emphasis{font-style:italic}
+
+/* @theme 9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp */div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-progress-parent"><div class="bespoke-progress-bar"></div></div><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-marpit-fragments="1" data-class="lead title" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" class="lead title" style="--class:lead title;--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h1>Fun with conditional types*</h1>
+<ul>
+<li data-marpit-fragment="1"><em>*</em> and other advanced types</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<p><img src="./media/titian-min.png" alt="height:200px" style="height:200px;" /></p>
+<p><strong>Titian Cernicova-Dragomir</strong></p>
+<ul>
+<li><img class="emoji" draggable="false" alt="🧩" src="https://twemoji.maxcdn.com/2/svg/1f9e9.svg" data-marp-twemoji=""/> TypeScript compiler contributor</li>
+<li><img class="emoji" draggable="false" alt="✨" src="https://twemoji.maxcdn.com/2/svg/2728.svg" data-marp-twemoji=""/> Fan of TypeScript</li>
+<li><img class="emoji" draggable="false" alt="💡" src="https://twemoji.maxcdn.com/2/svg/1f4a1.svg" data-marp-twemoji=""/> Answers TypeScript questions on <a href="stackoverflow.com">StackOverflow</a></li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>What we'll cover today</h3>
+<div class="two-columns">
+<ul>
+<li>Unions and intersections</li>
+<li>Discriminated unions</li>
+<li>Literal types</li>
+<li>Type guards</li>
+<li>Branded types</li>
+<li><code>keyof</code>, <code>typeof</code></li>
+<li>Index access types</li>
+<li>Mapped types</li>
+<li>Conditional types</li>
+<li>Template string literal types</li>
+</ul>
+</div>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-marpit-fragments="7" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Sets And Types</h3>
+<ul>
+<li data-marpit-fragment="1">Types are sets:
+<ul>
+<li data-marpit-fragment="2"><code>{ foo: number }</code> - the set of all values that are objects and have a <code>foo</code> property of type <code>number</code></li>
+<li data-marpit-fragment="3"><code>{ bar: number }</code> - the set of all values that are objects and have a <code>bar</code> property of type <code>number</code></li>
+<li data-marpit-fragment="4"><code>number</code> - the set of all values that are floating point numbers</li>
+<li data-marpit-fragment="5"><code>string</code>- the set of all values that are strings</li>
+<li data-marpit-fragment="6"><code>never</code>-  the empty set, no value can inhabit this set</li>
+<li data-marpit-fragment="7"><code>unknown</code> - the set of all possible values</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-marpit-fragments="6" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Object type as sets</h3>
+<ul>
+<li data-marpit-fragment="1"><code>{ foo: number }</code> - What values are in this set
+<ul>
+<li data-marpit-fragment="2"><code>{ foo: 1 }</code></li>
+<li data-marpit-fragment="3"><code>{ foo: 1, bar: 2 }</code></li>
+</ul>
+</li>
+<li data-marpit-fragment="4">Object types are a description of the minimal requirements of an object</li>
+<li data-marpit-fragment="5">Objects with more defined properties are subsets of types with fewer properties</li>
+<li data-marpit-fragment="6">Excess property checks are a useful pragmatic exception to usual typing rules</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-fragments="6" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Set operations can be applied to types</h3>
+<ul>
+<li data-marpit-fragment="1">Unions:
+<ul>
+<li data-marpit-fragment="2">Same concept as set unions <img src="./media/union.png" style="position:absolute; top:120px; left: 950px" /></li>
+<li data-marpit-fragment="3"><code>{ foo: number } | { bar: number }</code> the set of all objects that either
+<ul>
+<li data-marpit-fragment="4">have a <code>foo</code> property of type <code>number</code></li>
+<li data-marpit-fragment="5">have a <code>bar</code> property of type <code>number</code></li>
+</ul>
+</li>
+<li data-marpit-fragment="6"><code>string | number</code> the set of values that are either numbers or strings</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-marpit-fragments="7" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Set operations can be applied to types</h3>
+<ul>
+<li data-marpit-fragment="1">Intersections:
+<ul>
+<li data-marpit-fragment="2">Same concept as set intersections <img src="./media/intersection.png" style="position:absolute; top:120px; left: 950px" /></li>
+<li data-marpit-fragment="3"><code>{ foo: number } &amp; { bar: number }</code> the set of all objects that at the same time:
+<ul>
+<li data-marpit-fragment="4">have a <code>foo</code> property of type <code>number</code></li>
+<li data-marpit-fragment="5">have a <code>bar</code> property of type <code>number</code></li>
+</ul>
+</li>
+<li data-marpit-fragment="6"><code>number &amp; string</code> the set of all values that are both <code>number</code> and <code>string</code>
+<ul>
+<li data-marpit-fragment="7">This is the empty set, so it will reduce to <code>never</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Unions - Representing options</h3>
+<question>
+<p>How can I represent an object that is either a <code>Engineer</code> or a <code>Doctor</code>?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">interface</span> Engineer { name: <span class="hljs-built_in">string</span>; age: <span class="hljs-built_in">string</span>; field: <span class="hljs-built_in">string</span> }
+<span class="hljs-keyword">interface</span> Doctor { name: <span class="hljs-built_in">string</span>; age: <span class="hljs-built_in">string</span>; speciality: <span class="hljs-built_in">string</span> }
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>Use a union</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Type Guards - Narrowing unions</h3>
+<question>
+<p>Why can't I access some union properties?</p>
+</question>
+<answer>
+<p>You can only safely access common properties. You need to narrow the type of a union</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-marpit-fragments="4" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Type Guards - Narrowing unions</h3>
+<ul>
+<li data-marpit-fragment="1">Syntactic constructs that help us narrow a union</li>
+<li data-marpit-fragment="2">To narrow the <code>value</code> variable:
+<ul>
+<li data-marpit-fragment="3"><code>'property' in value</code>  - the <code>in</code> type guard</li>
+<li data-marpit-fragment="4"><code>typeof value === 'valid type'</code> - the <code>typeof</code> type guard</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>String and other literal types</h3>
+<question>
+<p>How can I strictly type the align property of an element (it can be one of the strings: <code>&quot;center&quot;</code>, <code>&quot;left&quot;</code>, <code>&quot;right&quot;</code>)?</p>
+</question>
+<answer>
+<p>Use string literal types</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-marpit-fragments="9" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>What are literal types ?</h3>
+<ul>
+<li data-marpit-fragment="1">Any value can also be a type</li>
+<li data-marpit-fragment="2">The set that only has one value</li>
+<li data-marpit-fragment="3">Examples of literal types:
+<ul>
+<li data-marpit-fragment="4"><code>string</code> literal types: <code>&quot;center&quot;</code>, <code>&quot;left&quot;</code>, <code>&quot;right&quot;</code></li>
+<li data-marpit-fragment="5"><code>number</code> literal types: <code>0</code>, <code>100</code></li>
+<li data-marpit-fragment="6"><code>boolean</code> literal types: <code>true</code>, <code>false</code></li>
+<li data-marpit-fragment="7"><code>null</code>, <code>undefined</code></li>
+<li data-marpit-fragment="8">Other literal producing types such as enums</li>
+</ul>
+</li>
+<li data-marpit-fragment="9">They are most useful when paired with unions</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-marpit-fragments="2" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Narrowing unions of literals</h3>
+<ul>
+<li>Syntactic constructs that help us narrow a union</li>
+<li>To narrow the <code>value</code> variable:
+<ul>
+<li><code>'property' in value</code>  - the <code>in</code> type guard</li>
+<li><code>typeof value === 'valid type'</code> - the <code>typeof</code> type guard</li>
+</ul>
+<ul>
+<li data-marpit-fragment="1"><code>value === constant</code>, <code>value !== constant</code>, <code>!value</code>, <code>value</code> expressions in <code>if</code> statements</li>
+<li data-marpit-fragment="2"><code>switch(value)</code> statements</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-marpit-fragments="2" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Strict null checking</h3>
+<ul>
+<li data-marpit-fragment="1">Carves out <code>null</code> and <code>undefined</code> out of other types</li>
+<li data-marpit-fragment="2">In terms of sets: The values <code>null</code> and <code>undefined</code> are not by default part of the sets described by a type</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-marpit-fragments="7" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Strict null checking</h3>
+<ul>
+<li data-marpit-fragment="1">
+<p>Without <code>strictNullChecks</code>:</p>
+<ul>
+<li data-marpit-fragment="2"><code>number</code> - the set of all values that are floating point numbers <strong>or <code>null</code> or <code>undefined</code></strong></li>
+<li data-marpit-fragment="3"><code>string</code>- the set of all values that are strings <strong>or <code>null</code> or <code>undefined</code></strong></li>
+</ul>
+</li>
+<li data-marpit-fragment="4">
+<p>With <code>strictNullChecks</code>:</p>
+<ul>
+<li data-marpit-fragment="5"><code>number</code> - the set of all values that are floating point numbers</li>
+<li data-marpit-fragment="6"><code>string</code>- the set of all values that are strings</li>
+<li data-marpit-fragment="7"><code>string | null</code>- the set of all values that are strings <strong>or <code>null</code></strong></li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Discriminated unions</h3>
+<question> 
+<p>Why does my union allow properties from any union constituent?<br />
+<br /></p>
+<p><img src="./media/3-discrimintaed-unions-bad.png" alt="height:200" style="height:200px;" /></p>
+</question>
+<answer>
+<p>By design. Use a discriminated union</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-marpit-fragments="3" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>About discriminated unions</h3>
+<ul>
+<li data-marpit-fragment="1">A property is considered as a discriminant property if:
+<ul>
+<li data-marpit-fragment="2">A union of literal types</li>
+<li data-marpit-fragment="3">It is a union type containing at least one literal type</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Type Guards - Narrowing unions</h3>
+<ul>
+<li>Syntactic constructs that help us narrow a union</li>
+<li>To narrow the <code>value</code> variable:
+<ul>
+<li><code>'property' in value</code>  - the <code>in</code> type guard</li>
+<li><code>typeof value === 'valid type'</code> - the <code>typeof</code> type guard</li>
+<li><code>value === constant</code>, <code>value !== constant</code>, <code>!value</code>, <code>value</code> expressions in <code>if</code> statements</li>
+<li><code>switch(value)</code> statements</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-marpit-fragments="3" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Type Guards - Narrowing discriminated unions</h3>
+<ul>
+<li data-marpit-fragment="1">To narrow the <code>obj</code> value that is discriminated by <code>type</code>:
+<ul>
+<li data-marpit-fragment="2"><code>obj.type === constant</code>, <code>obj.type !== constant</code>, <code>!obj.type</code>, <code>obj.type</code> expressions in <code>if</code> statements</li>
+<li data-marpit-fragment="3"><code>switch(obj.type)</code> statements</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Intersection And Union Reduction</h3>
+<question>
+<p>If I have a union <code>&quot;yes&quot; | &quot;no&quot; | 0 | 1</code> how can I get the <code>string</code> or <code>number</code> constituents?</p>
+</question>
+<answer>
+<p>Use an intersection</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-marpit-fragments="5" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Intersection And Union Reduction -  Rules</h3>
+<ul>
+<li data-marpit-fragment="1"><code>(&quot;yes&quot; | &quot;no&quot; | 0 | 1) &amp; string</code></li>
+<li data-marpit-fragment="2">Intersection goes on the inside
+<ul>
+<li data-marpit-fragment="3"><code>(&quot;yes&quot; &amp; string) | (&quot;no&quot; &amp; string) | (0 &amp; string) | (1 &amp; string)</code></li>
+</ul>
+</li>
+<li data-marpit-fragment="4">Some intersections are uninhabitable by any value so reduce to <code>never</code>
+<ul>
+<li data-marpit-fragment="5"><code>(&quot;yes&quot; &amp; string) | (&quot;no&quot; &amp; string) | never | never</code></li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-marpit-fragments="3" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Intersection And Union Reduction -  Rules</h3>
+<ul>
+<li><code>(&quot;yes&quot; | &quot;no&quot; | 0 | 1) &amp; string</code></li>
+<li><code>(&quot;yes&quot; &amp; string) | (&quot;no&quot; &amp; string) | (0 &amp; string) | (1 &amp; string)</code></li>
+<li><code>(&quot;yes&quot; &amp; string) | (&quot;no&quot; &amp; string) | never | never</code></li>
+</ul>
+<ul>
+<li data-marpit-fragment="1">Subtype reduction:
+<ul>
+<li data-marpit-fragment="2">If <code>D</code> is a sub set <code>P</code> then <code>D &amp; P</code> is <code>D</code><br />
+<svg width="200" height="200" viewbox="-5,-5,105,105" style="position: absolute;right:400;bottom: 150"><circle cx="50" cy="50" r="50" stroke="darkblue" stroke-width="1" fill="lightblue" /><circle cx="60" cy="60" r="25" stroke="darkblue" stroke-width="1" fill="#099ffc" /><text font-size="30" font-family="monospace" x="50" y="75">D</text><text font-size="30" font-family="monospace" x="20" y="35">P</text></svg></li>
+<li data-marpit-fragment="3"><code>&quot;yes&quot; | &quot;no&quot; | never | never</code></li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-marpit-fragments="3" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Intersection And Union Reduction -  Rules</h3>
+<ul>
+<li><code>(&quot;yes&quot; | &quot;no&quot; | 0 | 1) &amp; string</code></li>
+<li><code>(&quot;yes&quot; &amp; string) | (&quot;no&quot; &amp; string) | (0 &amp; string) | (1 &amp; string)</code></li>
+<li><code>(&quot;yes&quot; &amp; string) | (&quot;no&quot; &amp; string) | never | never</code></li>
+<li><code>&quot;yes&quot; | &quot;no&quot; | never | never</code></li>
+</ul>
+<ul>
+<li data-marpit-fragment="1"><code>never</code> is removed from a union
+<ul>
+<li data-marpit-fragment="2">A union with an empty set does not change the other set</li>
+<li data-marpit-fragment="3"><code>&quot;yes&quot; | &quot;no&quot;</code></li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Filtering out object types</h3>
+<question>
+<p>Given a discriminated union, how can we filter out a specific union constituent?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Person = {
+    <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;e&quot;</span>; name: <span class="hljs-built_in">string</span>; field: <span class="hljs-built_in">string</span>
+} | {
+    <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;d&quot;</span>; name: <span class="hljs-built_in">string</span>; speciality: <span class="hljs-built_in">string</span>
+}
+<span class="hljs-keyword">type</span> Doctor = { <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;d&quot;</span>; name: <span class="hljs-built_in">string</span>; speciality: <span class="hljs-built_in">string</span> }
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>Use an intersection</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Filtering out object types</h3>
+<ul>
+<li>Intersections that result in <code>never</code> properties are reduced to <code>never</code></li>
+</ul>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Doctor =  { <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;x&quot;</span>} &amp; {
+    <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;d&quot;</span>
+    <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+    age: <span class="hljs-built_in">string</span>;
+    speciality: <span class="hljs-built_in">string</span>
+} <span class="hljs-comment">/* = never */</span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Some strings preferred</h3>
+<question>
+<p>Can I offer some completions on a string value?<br />
+<br /></p>
+<p><img src="./media/4-preferred-strings.png" alt="height:150" style="height:150px;" /></p>
+</question>
+<answer>
+<p>Naive answer: <code>string | &quot;red&quot; | &quot;blue&quot;</code></p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-marpit-fragments="4" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Intersection And Union Reduction -  Rules</h3>
+<ul>
+<li data-marpit-fragment="1"><code>string  | &quot;red&quot; | &quot;blue&quot;</code></li>
+<li data-marpit-fragment="2">Subtype reduction:
+<ul>
+<li data-marpit-fragment="3">If <code>D</code> is a sub set <code>P</code> then <code>D | P</code> is <code>P</code><br />
+<svg width="200" height="200" viewbox="-5,-5,105,105" style="position: absolute;right:400;bottom: 150"><circle cx="50" cy="50" r="50" stroke="darkblue" stroke-width="1" fill="lightblue" /><circle cx="60" cy="60" r="25" stroke="darkblue" stroke-width="1" fill="#099ffc" /><text font-size="30" font-family="monospace" x="50" y="75">D</text><text font-size="30" font-family="monospace" x="20" y="35">P</text></svg></li>
+<li data-marpit-fragment="4"><code>string</code></li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Branded types</h3>
+<question>
+<p>How can I ensure that a string is a file path?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Path =  <span class="hljs-built_in">string</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">copy</span>(<span class="hljs-params">source: Path, destination: Path</span>) </span>{ <span class="hljs-comment">/*...*/</span> }
+
+copy(<span class="hljs-string">&quot;AAA&quot;</span>, <span class="hljs-string">&quot;BBB&quot;</span>); <span class="hljs-comment">// should be errors</span>
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use branded types</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-marpit-fragments="4" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>What are branded types</h3>
+<ul>
+<li data-marpit-fragment="1">A primitive type intersected with an object</li>
+<li data-marpit-fragment="2">The object type that ensures that the resulting type is no longer compatible with the primitive type
+<ul>
+<li data-marpit-fragment="3">Can be done with a string literal property</li>
+<li data-marpit-fragment="4">Can be done with a unique symbol</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-marpit-fragments="3" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Other applications</h3>
+<ul>
+<li data-marpit-fragment="1">Generally enforce constraints on primitive types that can be traced in the type system
+<ul>
+<li data-marpit-fragment="2">A <code>number</code> is a database id</li>
+<li data-marpit-fragment="3">A <code>string</code> is a GUID</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;"></section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Getting the keys of a type</h3>
+<question>
+<p>How can we get a type with all the keys in an object type ?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>
+<span class="hljs-keyword">type</span> Person = { <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>; age: <span class="hljs-built_in">number</span> }
+<span class="hljs-keyword">type</span> PersonKeys = <span class="hljs-string">&quot;name&quot;</span> | <span class="hljs-string">&quot;age&quot;</span>
+
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>Using the <code>keyof</code> operator</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Getting the keys of an object type</h3>
+<question>
+Why does `Object.keys` return `string[]` and not `keyof T`
+</question>
+<answer>
+Because object types describe the minimal set of properties for a value, other properties might exist at runtime.
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Getting the type of a variable</h3>
+<question>
+<p>How can we get a type of a variable?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> env = {
+    <span class="hljs-string">&quot;SERVER&quot;</span>: <span class="hljs-string">&quot;url&quot;</span>,
+    <span class="hljs-string">&quot;PORT&quot;</span>: <span class="hljs-number">8080</span>
+}
+<span class="hljs-keyword">type</span> Env = {
+    <span class="hljs-string">&quot;SERVER&quot;</span>: <span class="hljs-built_in">string</span>,
+    <span class="hljs-string">&quot;PORT&quot;</span>: <span class="hljs-built_in">number</span>
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>Use the <code>typeof</code> operator</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Indexed types</h3>
+<question>
+    How can we get a type of all property values in an object ?
+</question>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Book = {
+    <span class="hljs-attr">pages</span>: <span class="hljs-built_in">number</span>;
+    fontSize: <span class="hljs-built_in">number</span>;
+    name: <span class="hljs-built_in">string</span>;
+    author: <span class="hljs-built_in">string</span>
+}
+<span class="hljs-keyword">type</span> R = ValueOf&lt;Book&gt; <span class="hljs-comment">// string | number</span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Indexed types</h3>
+<question>
+<p>How can we get the type of a property in an object ?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Book = {
+    <span class="hljs-attr">pages</span>: <span class="hljs-built_in">number</span>;
+    fontSize: <span class="hljs-built_in">number</span>;
+    name: <span class="hljs-built_in">string</span>;
+    author: <span class="hljs-built_in">string</span>
+}
+<span class="hljs-keyword">type</span> TypeOfPages = <span class="hljs-built_in">number</span> <span class="hljs-comment">// Get the type of pages in Book</span>
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>Use an indexed type</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-marpit-fragments="5" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Anatomy of Indexed types</h3>
+<p><code>T[K]</code></p>
+<ul>
+<li data-marpit-fragment="1"><code>T</code> can be any type or type expression
+<ul>
+<li data-marpit-fragment="2">ex: <code>Book</code>, <code>typeof env</code></li>
+</ul>
+</li>
+<li data-marpit-fragment="3"><code>K</code> can be any valid type expression that can index <code>T</code>
+<ul>
+<li data-marpit-fragment="4"><code>&quot;name&quot;</code> for <code>Book</code></li>
+<li data-marpit-fragment="5"><code>number</code> for arrays</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-marpit-fragments="3" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Anatomy of Indexed types</h3>
+<p><code>T[K]</code></p>
+<ul>
+<li><code>T</code> can be any type or type expression</li>
+<li><code>K</code> can be any valid type expression that can index <code>T</code></li>
+</ul>
+<ul>
+<li data-marpit-fragment="1">The indexing operation distributes over <code>K</code> if <code>K</code> is a union
+<ul>
+<li data-marpit-fragment="2"><code>T[K1 | K2 | ... | Kn]</code> becomes</li>
+<li data-marpit-fragment="3"><code>T[K1] | T[K2] | ... | T[Kn]</code></li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Indexed types</h3>
+<question>
+    How can we get a type of all property values in an object ?
+</question>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Book = {
+    <span class="hljs-attr">pages</span>: <span class="hljs-built_in">number</span>;
+    fontSize: <span class="hljs-built_in">number</span>;
+    name: <span class="hljs-built_in">string</span>;
+    author: <span class="hljs-built_in">string</span>
+}
+<span class="hljs-keyword">type</span> R = ValueOf&lt;Book&gt; <span class="hljs-comment">// string | number</span>
+
+</span></span></foreignObject></svg></code></pre>
+<answer>
+<p>Use an indexed type</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Safe get function</h3>
+<question>
+<p>How can we make a function to get a value in an object safely</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">const</span> env = {
+    <span class="hljs-string">&quot;SERVER&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;PORT&quot;</span>: <span class="hljs-number">7808</span>
+}
+
+<span class="hljs-keyword">let</span> server = getValue(<span class="hljs-string">&quot;SERVER&quot;</span>); <span class="hljs-comment">// ideally string</span>
+<span class="hljs-keyword">let</span> port = getValue(<span class="hljs-string">&quot;PORT&quot;</span>) <span class="hljs-comment">// ideally number</span>
+<span class="hljs-keyword">let</span> pport = getValue(<span class="hljs-string">&quot;PPORT&quot;</span>) <span class="hljs-comment">// ideally error</span>
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>Use index access types, <code>keyof</code> and a generic function</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-marpit-fragments="5" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Some predefined mapped types</h3>
+<ul>
+<li data-marpit-fragment="1"><code>Partial</code> - Creates a type with the same properties but with all properties <strong>optional</strong></li>
+<li data-marpit-fragment="2"><code>Record</code> - Creates a type with a given set of properties all of the same type</li>
+<li data-marpit-fragment="3"><code>Readonly</code> - Creates a type with the same properties but with all properties <strong>readonly</strong></li>
+<li data-marpit-fragment="4"><code>Required</code> - Creates a type with the same properties but with all properties <strong>required</strong></li>
+<li data-marpit-fragment="5"><code>Pick</code> - Picks a set of properties from the given type</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-marpit-fragments="7" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Some predefined conditional types</h3>
+<ul>
+<li data-marpit-fragment="1"><code>Omit</code> - Removes specific types from an object type</li>
+<li data-marpit-fragment="2"><code>Exclude&lt;T,U&gt;</code>-Removes constituents that extend <code>U</code> from a union <code>T</code>
+<ul>
+<li data-marpit-fragment="3"><code>NonNullable&lt;T&gt;</code> - Removes <code>null</code> and <code>undefined</code> from <code>T</code></li>
+</ul>
+</li>
+<li data-marpit-fragment="4"><code>Extract&lt;T,U&gt;</code>-Gets constituents that extend <code>U</code> from a union <code>T</code></li>
+<li data-marpit-fragment="5"><code>Awaited</code> - Unwraps a promise type.</li>
+<li data-marpit-fragment="6"><code>ReturnType</code> / <code>InstanceType</code> - Gets the return type of a function or constructor</li>
+<li data-marpit-fragment="7"><code>ConstructorParameters</code> / <code>Parameters</code> - Gets the parameter types of a function or constructor</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-marpit-fragments="3" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Some predefined conditional types</h3>
+<ul>
+<li data-marpit-fragment="1"><code>ConstructorParameters</code> / <code>Parameters</code> - Gets the parameter types of a function or constructor
+<ul>
+<li data-marpit-fragment="2">What kind of types do these conditional types produce?</li>
+<li data-marpit-fragment="3">A tuple type.</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-marpit-fragments="4" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>What is a tuple type</h3>
+<ul>
+<li data-marpit-fragment="1">At runtime it is an array value</li>
+<li data-marpit-fragment="2">They are more strict:
+<ul>
+<li data-marpit-fragment="3">They have a fixed length</li>
+<li data-marpit-fragment="4">Each element can have a different type</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Overloads with tuples</h3>
+<question>
+Can we make TS understand that after the check, port is a number? 
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">connect</span>(<span class="hljs-params">host: <span class="hljs-built_in">string</span>, port: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">void</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">connect</span>(<span class="hljs-params">cfg: { host: <span class="hljs-built_in">string</span>, port: <span class="hljs-built_in">number</span> }</span>): <span class="hljs-title">void</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">connect</span>(<span class="hljs-params">cfgOrHost: { host: <span class="hljs-built_in">string</span>, port: <span class="hljs-built_in">number</span> } | <span class="hljs-built_in">string</span>, maybePort?: <span class="hljs-built_in">number</span></span>) </span>{
+  <span class="hljs-title">if</span> (<span class="hljs-params"><span class="hljs-keyword">typeof</span> cfgOrHost === <span class="hljs-string">&quot;string&quot;</span></span>) </span>{
+    <span class="hljs-title">const</span> <span class="hljs-title">host</span> = <span class="hljs-title">cfgOrHost</span></span>;
+    <span class="hljs-keyword">const</span> port = maybePort! <span class="hljs-comment">// Yeah, I KNOW it a port TS!</span>
+    internal(host, port);
+  } <span class="hljs-keyword">else</span> {
+    internal(cfgOrHost.host, cfgOrHost.port);
+  }
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+Unions of tuple types can help
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="46" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Can we copy parameters from another function</h3>
+<question>
+Can we copy parameters from another function?
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">declare</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">connect</span>(<span class="hljs-params">host: <span class="hljs-built_in">string</span>, port: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">void</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">connectWithMessage</span>(<span class="hljs-params">host: <span class="hljs-built_in">string</span>, port: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">void</span> </span>{
+  <span class="hljs-title">try</span> </span>{
+    connect(host, port)
+  }<span class="hljs-keyword">catch</span>(e) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Error occured&quot;</span>);
+  }
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use <code>Parameters</code></p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="47" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Can we also add parameters?</h3>
+<question>
+<p>Can we add parameters when we copy parameters from another function?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">declare</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">connect</span>(<span class="hljs-params">host: <span class="hljs-built_in">string</span>, port: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">void</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">connectWithMessage</span>(<span class="hljs-params">host: <span class="hljs-built_in">string</span>, port: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">void</span> </span>{
+  <span class="hljs-title">try</span> </span>{
+    connect(host, port)
+  }<span class="hljs-keyword">catch</span>(e) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Error occured&quot;</span>);
+  }
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use <code>...</code> to spread tuple types in other tuple types.</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="48" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Can we make a generic wrapper function?</h3>
+<question>
+Can we type a function that wraps another function: 
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">wrapWithLog</span>(<span class="hljs-params">mesage: <span class="hljs-built_in">string</span>, fn: <span class="hljs-built_in">any</span></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">...a: <span class="hljs-built_in">any</span></span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Executing <span class="hljs-subst">${mesage}</span>`</span>);
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">return</span> fn();
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Executed <span class="hljs-subst">${mesage}</span>`</span>);
+    }
+  }
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>Either using <code>Parameters</code>/<code>ReturnType</code> or direct inference.</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="49" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Can we transform the elements of a tuple?</h3>
+<question>
+Can we create a generic function that replaces parameters with Promise&lt;parameter&gt;: 
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">promiseArgs</span>&lt;<span class="hljs-title">T</span> <span class="hljs-title">extends</span> <span class="hljs-title">any</span>[], <span class="hljs-title">R</span>&gt;(<span class="hljs-params">fn: (...a: T) =&gt; R</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">async</span> (...a: <span class="hljs-built_in">any</span>[] <span class="hljs-comment">/* Promisify T */</span>) =&gt; {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> fn(... (<span class="hljs-keyword">await</span> <span class="hljs-built_in">Promise</span>.all(a)) <span class="hljs-keyword">as</span> T);
+  }
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>Either using <code>Parameters</code> &amp; <code>ReturnType</code> or direct inference.</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Custom mapped types</h3>
+<question>
+<p>How can we create a <code>type</code> with return type of all functions in another type</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> EnvGetters = {
+    <span class="hljs-string">&quot;SERVER&quot;</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">string</span>,
+    <span class="hljs-string">&quot;PORT&quot;</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">number</span>
+}
+<span class="hljs-keyword">type</span> Env = {
+    <span class="hljs-string">&quot;SERVER&quot;</span>: <span class="hljs-built_in">string</span>,
+    <span class="hljs-string">&quot;PORT&quot;</span>: <span class="hljs-built_in">number</span>
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>Use a custom mapped type in conjunction with the conditional type <code>ReturnType</code></p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-marpit-fragments="4" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Basic Anatomy of a Mapped Type</h3>
+<p><code>{ [P in K]: U }</code></p>
+<ul>
+<li data-marpit-fragment="1"><code>P in K</code> take each <code>P</code> in <code>K</code>
+<ul>
+<li data-marpit-fragment="2"><code>K</code> is usually a union (ex: <code>&quot;name&quot; | &quot;field&quot;</code>)</li>
+<li data-marpit-fragment="3"><code>P</code> will be each constituent of the union (ex <code>&quot;name&quot;</code>, <code>&quot;field&quot;</code>)</li>
+<li data-marpit-fragment="4"><code>P</code> is a type parameter and can be used anywhere a type would be used inside <code>U</code></li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="52" data-marpit-fragments="5" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Basic Anatomy of a Mapped Type</h3>
+<p><code>{ [P in K]: U }</code></p>
+<ul>
+<li><code>P in K</code> take each <code>P</code> in <code>K</code></li>
+</ul>
+<ul>
+<li data-marpit-fragment="1"><code>: U</code> - The type of the property <code>P</code>
+<ul>
+<li data-marpit-fragment="2"><code>U</code> can be any type expression
+<ul>
+<li data-marpit-fragment="3">Valid values of <code>U</code>: <code>string</code>, <code>number</code>, <code>typeof env</code></li>
+</ul>
+</li>
+<li data-marpit-fragment="4"><code>U</code> can depend on <code>P</code>
+<ul>
+<li data-marpit-fragment="5">Valid values of <code>U</code>: <code>P</code>, <code>Env[P]</code>, <code>T[P]</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="53" data-marpit-fragments="4" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Homomorphic mapped types</h3>
+<p><code>{ [P in keyof T]: U }</code><br />
+<code>type G&lt;K extends keyof T&gt; = { [P in K]: U}</code></p>
+<ul>
+<li data-marpit-fragment="1">Homomorphic mapped types preserver structure</li>
+<li data-marpit-fragment="2">The type use in the <code>in</code> clause is:
+<ul>
+<li data-marpit-fragment="3"><code>keyof T</code> - The modifiers of T are preserved</li>
+<li data-marpit-fragment="4">a type parameter that extends <code>keyof T</code> - The modifiers of <code>T</code> are preserved</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="54" data-marpit-fragments="4" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Manipulating modifiers</h3>
+<ul>
+<li data-marpit-fragment="1"><code>{ readonly  [P in keyof T]: U }</code> - add <code>readonly</code> modifier</li>
+<li data-marpit-fragment="2"><code>{ -readonly [P in keyof T]: U }</code> - remove <code>readonly</code> modifier</li>
+<li data-marpit-fragment="3"><code>{ [P in keyof T] ?: U }</code> - add <code>?</code> modifier</li>
+<li data-marpit-fragment="4"><code>{ [P in keyof T]-?: U }</code> - remove <code>-?</code> modifier</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="55" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;"></section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="56" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Conditional Types</h3>
+<question>
+<p>How can we correctly type a function that return a <code>string</code> or a <code>number</code> based on the type of a passed in parameter</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getSampleData</span>(<span class="hljs-params">value: <span class="hljs-string">&quot;string&quot;</span> | <span class="hljs-string">&quot;number&quot;</span></span>): <span class="hljs-title">string</span> | <span class="hljs-title">number</span> </span>{
+    <span class="hljs-keyword">return</span> value === <span class="hljs-string">&quot;string&quot;</span> ? <span class="hljs-string">&quot;Test Data&quot;</span> : <span class="hljs-number">0</span>
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use conditional types</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="57" data-marpit-fragments="6" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Anatomy of Conditional Types</h3>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> X = TestedType <span class="hljs-keyword">extends</span> PotentialBaseType ? TypeIfTrue: TypeIfFalse
+</span></span></foreignObject></svg></code></pre>
+<ul>
+<li data-marpit-fragment="1">Similar syntax to conditional operator <code>cond ? tValue: fValue</code></li>
+<li data-marpit-fragment="2"><code>TestedType</code> - Any type we want to test</li>
+<li data-marpit-fragment="3"><code>extends</code> - no other operator is possible</li>
+<li data-marpit-fragment="4"><code>PotentialBaseType</code> - Any type we think might be base type</li>
+<li data-marpit-fragment="5"><code>TypeIfTrue</code> result if <code>TestedType extends PotentialBaseType</code></li>
+<li data-marpit-fragment="6"><code>TypeIfFalse</code> result if condition not true</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="58" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Filter Keys of Types</h3>
+<question>
+<p>How can we get the properties of a specific type from a given type</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Book = {
+    <span class="hljs-attr">pages</span>: <span class="hljs-built_in">number</span>;
+    fontSize: <span class="hljs-built_in">number</span>;
+    name: <span class="hljs-built_in">string</span>;
+    author: <span class="hljs-built_in">string</span>
+}
+<span class="hljs-keyword">type</span> StringKeys = <span class="hljs-string">&quot;name&quot;</span> | <span class="hljs-string">&quot;author&quot;</span>
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use mapped and conditional types</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="59" data-marpit-fragments="8" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Mapped Type With <code>as</code>clause</h3>
+<p><code>{ [P in K as C]: U }</code></p>
+<ul>
+<li data-marpit-fragment="1"><code>P</code> will take the values in <code>K</code></li>
+<li data-marpit-fragment="2"><code>C</code> will be used as the key of the final type. Not <code>P</code>
+<ul>
+<li data-marpit-fragment="3"><code>C</code> can be any type that depends on <code>P</code></li>
+<li data-marpit-fragment="4"><code>C</code> must be
+<ul>
+<li data-marpit-fragment="5">valid key for a type: (a subtype of <code>number</code>, <code>string</code> or <code>symbol</code>)</li>
+<li data-marpit-fragment="6"><code>never</code></li>
+</ul>
+</li>
+<li data-marpit-fragment="7">If <code>C</code> is <code>never</code> that property will be removed form the result</li>
+<li data-marpit-fragment="8">Usually a <code>C</code> will be a conditional type</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="60" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Filtering a union</h3>
+<question>
+<p>How can we extract or exclude constituents of a union that extend a specific type:</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Shape = 
+  | { <span class="hljs-attr">radius</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">color</span>: <span class="hljs-built_in">string</span> } 
+  | { <span class="hljs-attr">height</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">color</span>: <span class="hljs-built_in">string</span> }
+  | { <span class="hljs-attr">height</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">fill</span>: <span class="hljs-built_in">string</span> }
+
+<span class="hljs-keyword">type</span> FilledShapes = { <span class="hljs-attr">height</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">fill</span>: <span class="hljs-built_in">string</span> }
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use the <strong>predefined conditional types</strong> <code>Extract</code> and <code>Exclude</code></p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="61" data-marpit-fragments="6" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>The distributive property of conditional types</h3>
+<ul>
+<li data-marpit-fragment="1">Conditional types distribute over <strong>naked</strong> type parameters:
+<ul>
+<li data-marpit-fragment="2">If the condition is directly on a type parameter (ex: <code>T extends ...</code>)</li>
+<li data-marpit-fragment="3">and if the type parameter is a union</li>
+<li data-marpit-fragment="4">then the conditional is applied to each union constituent</li>
+<li data-marpit-fragment="5">and each results are unioned</li>
+<li data-marpit-fragment="6"><code>C&lt;T1 | T2 | ... | Tn&gt; = C&lt;T1&gt; | C&lt;T2&gt; | ... | C&lt;Tn&gt;</code></li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="62" data-marpit-fragments="5" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>The distributive property of conditional types</h3>
+<ul>
+<li data-marpit-fragment="1">Conditional types distribute over <strong>naked</strong> type parameters:</li>
+<li data-marpit-fragment="2">
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>Extract&lt;<span class="hljs-number">0</span> | <span class="hljs-number">1</span> | <span class="hljs-string">&quot;yes&quot;</span> | <span class="hljs-string">&quot;no&quot;</span>, <span class="hljs-built_in">string</span>&gt; = T <span class="hljs-keyword">extends</span> U ? T : <span class="hljs-built_in">never</span>
+</span></span></foreignObject></svg></code></pre>
+</li>
+<li data-marpit-fragment="3">
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(<span class="hljs-number">0</span> <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span> ? <span class="hljs-number">0</span> :<span class="hljs-built_in">never</span>) |
+(<span class="hljs-number">1</span> <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span> ? <span class="hljs-number">0</span> :<span class="hljs-built_in">never</span>) |
+(<span class="hljs-string">&quot;yes&quot;</span> <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span> ? <span class="hljs-string">&quot;yes&quot;</span> :<span class="hljs-built_in">never</span>) |
+(<span class="hljs-string">&quot;no&quot;</span> <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span> ? <span class="hljs-string">&quot;no&quot;</span> :<span class="hljs-built_in">never</span>)
+</span></span></foreignObject></svg></code></pre>
+</li>
+<li data-marpit-fragment="4">
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-built_in">never</span> | <span class="hljs-built_in">never</span> | <span class="hljs-string">&quot;yes&quot;</span> | <span class="hljs-string">&quot;no&quot;</span>
+</span></span></foreignObject></svg></code></pre>
+</li>
+<li data-marpit-fragment="5">
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-string">&quot;yes&quot;</span> | <span class="hljs-string">&quot;no&quot;</span>
+</span></span></foreignObject></svg></code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="63" data-marpit-fragments="8" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Distributive only conditional type</h3>
+<ul>
+<li data-marpit-fragment="1">Disabling distribution:
+<ul>
+<li data-marpit-fragment="2">Wrap the type parameter in a tuple <code>[T]</code></li>
+<li data-marpit-fragment="3">Other types also work but depend on variance</li>
+</ul>
+</li>
+<li data-marpit-fragment="4">Sometimes we just need distribution over a union
+<ul>
+<li data-marpit-fragment="5">We can use an always true condition
+<ul>
+<li data-marpit-fragment="6"><code>T extends T</code></li>
+<li data-marpit-fragment="7"><code>T extends unknown</code></li>
+<li data-marpit-fragment="8"><code>T extends any</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="64" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Distributive only conditional types</h3>
+<question>
+<p>Staring with the union <code>string | number</code> can we create a new union <code>string[] | number[]</code></p>
+</question>
+<answer>
+<p>Yes we can using distributive conditional types</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="65" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Distributive conditional types</h3>
+<question>
+How can I get all the keys from all union constituents:
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Person =
+    | { <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>; field: <span class="hljs-built_in">string</span> }
+    | { <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>; specialty: <span class="hljs-built_in">string</span> }
+
+<span class="hljs-keyword">type</span> Keys = KeyOfAll&lt;Person&gt; <span class="hljs-comment">// &quot;name&quot; | &quot;specialty&quot; | &quot;field&quot;</span>
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use <strong>distributive conditional types</strong></p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="66" data-marpit-fragments="2" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Strict union - The problem</h3>
+<ul>
+<li data-marpit-fragment="1">Unions allow properties of any union constituent - as we previously saw</li>
+<li data-marpit-fragment="2">Find a way to avoid this without discriminated unions</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="67" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Inference behavior of conditional types</h3>
+<question>
+Give a type that contains functions that return promises, can we create a type with the same keys but the value of the promises as the property types?
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> EnvGetters = {
+    <span class="hljs-string">&quot;SERVER&quot;</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">Promise</span>&lt;<span class="hljs-built_in">string</span>&gt;,
+    <span class="hljs-string">&quot;PORT&quot;</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">Promise</span>&lt;<span class="hljs-built_in">number</span>&gt;
+}
+<span class="hljs-keyword">type</span> Env = {
+    <span class="hljs-string">&quot;SERVER&quot;</span>: <span class="hljs-built_in">string</span>,
+    <span class="hljs-string">&quot;PORT&quot;</span>: <span class="hljs-built_in">number</span>
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>Yes, we can use <strong>conditional types</strong></p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="68" data-marpit-fragments="5" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Anatomy of conditional types</h3>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>T extends B&lt;infer U1, infer U2, ... infer Un&gt;
+    ? R&lt;U1, U2, ..., Un&gt; 
+    : F
+</span></span></foreignObject></svg></code></pre>
+<ul>
+<li data-marpit-fragment="1"><code>infer</code> will introduce new type parameters</li>
+<li data-marpit-fragment="2">During the matching phase they don't count towards compatibility</li>
+<li data-marpit-fragment="3">These new type parameters extract the types in <code>T</code></li>
+<li data-marpit-fragment="4">On the true branch we can use these new type parameters</li>
+<li data-marpit-fragment="5">On the false branch we can't use them (since they weren't extracted)</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="69" data-marpit-fragments="4" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Conditional type summary</h3>
+<ul>
+<li data-marpit-fragment="1">Conditional types have 3 behaviors
+<ul>
+<li data-marpit-fragment="2">The type conditional behavior</li>
+<li data-marpit-fragment="3">The union distribution behavior</li>
+<li data-marpit-fragment="4">The inference behavior</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="70" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;"></section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="71" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Manipulate Strings - Concatenation</h3>
+<question>
+<p>Can we create a type that has <code>get</code> / <code>set</code> methods for each member of another type?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Env = {
+    <span class="hljs-string">&quot;isServer&quot;</span>: <span class="hljs-built_in">string</span>;
+    <span class="hljs-string">&quot;maxRequestsPerMinute&quot;</span>: <span class="hljs-built_in">number</span>;
+}
+<span class="hljs-keyword">type</span> EnvData = {
+    <span class="hljs-string">&quot;getIsServer&quot;</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">string</span>;
+    <span class="hljs-string">&quot;getMaxRequestsPerMinute&quot;</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">number</span>;
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use <strong>template literal types</strong></p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="72" data-marpit-fragments="6" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>String Manipulation</h3>
+<ul>
+<li data-marpit-fragment="1">We can concatenate strings using template literal types</li>
+<li data-marpit-fragment="2">We can do some more complex transformations using intrinsic types:
+<ul>
+<li data-marpit-fragment="3"><code>Capitalize</code> - <code>Capitalize&lt;&quot;initData&quot;&gt; = &quot;InitData&quot;</code></li>
+<li data-marpit-fragment="4"><code>Uncapitalize</code> - <code>Uncapitalize&lt;&quot;InitData&quot;&gt; = &quot;initData&quot;</code></li>
+<li data-marpit-fragment="5"><code>Uppercase</code> - <code>Uppercase&lt;&quot;Init&quot;&gt; = &quot;INIT&quot;</code></li>
+<li data-marpit-fragment="6"><code>Lowercase</code> - <code>Uppercase&lt;&quot;Init&quot;&gt; = &quot;init&quot;</code></li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="73" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Manipulate Strings</h3>
+<question>
+<p>How can we transform snake case properties names to camel case property names?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Env = {
+    <span class="hljs-string">&quot;X_IS_ADMIN&quot;</span> : <span class="hljs-built_in">boolean</span>;
+    <span class="hljs-string">&quot;X_MAX_REQUESTS_PER_MINUTE&quot;</span>: <span class="hljs-built_in">number</span>;
+}
+<span class="hljs-keyword">type</span> EnvData = {
+    <span class="hljs-string">&quot;isAdmin&quot;</span>: <span class="hljs-built_in">boolean</span>,
+    <span class="hljs-string">&quot;maxRequestsPerMinute&quot;</span>: <span class="hljs-built_in">number</span>;
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use <strong>template literal types</strong> in <strong>recursive conditional types</strong>.</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="74" data-class="lead title" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" class="lead title" style="--class:lead title;--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h1>Thank you!</h1>
+<p>Questions on: <svg viewBox="0 0 24 24" aria-hidden="true" 
+    style="fill: rgba(29,161,242,1.00); height:1em" 
+    ><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" /><path /></g></svg>@TitianCernicova</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="75" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Bonus type - DeepReadonly</h3>
+<question>
+<p>Is it possible to create a type that makes all nested properties readonly?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Env = {
+    <span class="hljs-attr">restApi</span>: { <span class="hljs-attr">server</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">port</span>: <span class="hljs-built_in">number</span> }
+    <span class="hljs-attr">dbServers</span>: <span class="hljs-built_in">Array</span>&lt;{ <span class="hljs-attr">server</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">port</span>: <span class="hljs-built_in">number</span> }&gt;
+}
+<span class="hljs-keyword">type</span> ReadonlyEnv = {
+    <span class="hljs-keyword">readonly</span> restApi: { <span class="hljs-keyword">readonly</span> server: <span class="hljs-built_in">string</span>, <span class="hljs-keyword">readonly</span> port: <span class="hljs-built_in">number</span> }
+    <span class="hljs-keyword">readonly</span> dbServers: <span class="hljs-built_in">Array</span>&lt;{ <span class="hljs-keyword">readonly</span> server: <span class="hljs-built_in">string</span>, <span class="hljs-keyword">readonly</span> port: <span class="hljs-built_in">number</span> }&gt;
+}
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use a <strong>custom mapped type</strong> that is recursive.</p>
+</answer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="76" data-theme="9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp" style="--theme:9giz0m2moedzh8u5chp5doeo5xlnvp0cfaqfh833vqwp;">
+<h3>Bonus type - <code>UnionToIntersection</code></h3>
+<question>
+<p>Can we convert a union to an intersection?</p>
+<pre><code class="language-ts"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> U = { <span class="hljs-attr">foo</span>: <span class="hljs-built_in">number</span> } | { <span class="hljs-attr">bar</span>: <span class="hljs-built_in">number</span> }
+<span class="hljs-keyword">type</span> I = { <span class="hljs-attr">foo</span>: <span class="hljs-built_in">number</span> } &amp; { <span class="hljs-attr">bar</span>: <span class="hljs-built_in">number</span> }
+</span></span></foreignObject></svg></code></pre>
+</question>
+<answer>
+<p>We can use the <strong>inference</strong> behavior of <strong>conditional types</strong>.</p>
+</answer>
+</section>
+<script>!function(){"use strict";const t="marpitSVGPolyfill:setZoomFactor,",e=Symbol();let r,o;function n(n){const i="object"==typeof n&&n.target||document,a="object"==typeof n?n.zoom:n;window[e]||(Object.defineProperty(window,e,{configurable:!0,value:!0}),window.addEventListener("message",(({data:e,origin:r})=>{if(r===window.origin)try{if(e&&"string"==typeof e&&e.startsWith(t)){const[,t]=e.split(","),r=Number.parseFloat(t);Number.isNaN(r)||(o=r)}}catch(t){console.error(t)}})));let l=!1;Array.from(i.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,n,i,s;t.style.transform||(t.style.transform="translateZ(0)");const c=a||o||t.currentScale||1;r!==c&&(r=c,l=c);const d=t.getBoundingClientRect(),{length:u}=t.children;for(let r=0;r<u;r+=1){const o=t.children[r],a=o.getScreenCTM();if(a){const t=null!==(n=null===(e=o.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==n?n:0,r=null!==(s=null===(i=o.y)||void 0===i?void 0:i.baseVal.value)&&void 0!==s?s:0,l=o.firstElementChild,{style:u}=l;u.transformOrigin||(u.transformOrigin=`${-t}px ${-r}px`),u.transform=`scale(${c}) matrix(${a.a}, ${a.b}, ${a.c}, ${a.d}, ${a.e-d.left}, ${a.f-d.top}) translateZ(0.0001px)`}}})),!1!==l&&Array.from(i.querySelectorAll("iframe"),(({contentWindow:e})=>{null==e||e.postMessage(`${t}${l}`,"null"===window.origin?"*":window.origin)}))}r=1,o=void 0;const i=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function a({once:t=!1,target:e=document}={}){const r="Apple Computer, Inc."===navigator.vendor?[n]:[];let o=!t;const a=()=>{for(const t of r)t({target:e});!function(t=document){Array.from(t.querySelectorAll('svg[data-marp-fitting="svg"]'),(t=>{var e;const r=t.firstChild,o=r.firstChild,{scrollWidth:n,scrollHeight:a}=o;let l,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(l=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(s=e)}const c=Math.max(n,s),d=Math.max(a,1),u=`0 0 ${c} ${d}`;i(r,"width",`${c}`),i(r,"height",`${d}`),i(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),i(t,"viewBox",u)&&t.classList.toggle("__reflow__")}))}(e),o&&window.requestAnimationFrame(a)};return a(),()=>{o=!1}}const l=Symbol(),s=document.currentScript;((t=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(t[l])return t[l];const e=a({target:t}),r=()=>{e(),delete t[l]};Object.defineProperty(t,l,{configurable:!0,value:r})})(s?s.getRootNode():document)}();
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="42" tabindex="0"><p>1. What is a tuple type
+2. Labeled/optional/ rest stuff</p></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@1.1.1/lib/bespoke.js.LICENSE.txt */
+!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),a=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),s={},i=function(e,t){return(t=t||{}).index=a.indexOf(e),t.slide=e,t},o=function(e,t){s[e]=(s[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(s[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){a[e]&&(n&&l("deactivate",i(n,t)),n=a[e],l("activate",i(n,t)))},d=function(e,t){var r=a.indexOf(n)+e;l(e>0?"next":"prev",i(n,t))&&c(r,t)},u={off:o,on:function(e,t){return(s[e]||(s[e]=[])).push(t),o.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return a.indexOf(n);l("slide",i(a[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:a,destroy:function(e){l("destroy",i(n,e)),s={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach((e=>e.classList.add("bespoke-marp-slide"))),e.on("activate",(t=>{const n=t.slide,r=!n.classList.contains("bespoke-marp-active");e.slides.forEach((e=>{e.classList.remove("bespoke-marp-active"),e.setAttribute("aria-hidden","true")})),n.classList.add("bespoke-marp-active"),n.removeAttribute("aria-hidden"),r&&(n.classList.add("bespoke-marp-active-ready"),document.body.clientHeight,n.classList.remove("bespoke-marp-active-ready"))}))}function n(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map((e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]))});const r=r=>void 0!==e.fragments[t][n+r],a=(r,a)=>{t=r,n=a,e.fragments.forEach(((e,t)=>{e.forEach(((e,n)=>{if(null==e)return;const s=t<r||t===r&&n<=a;e.setAttribute("data-bespoke-marp-fragment",s?"active":"inactive"),t===r&&n===a?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")}))})),e.fragmentIndex=a;const s={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:a};e.fire("fragment",s)};e.on("next",(({fragment:s=!0})=>{if(s){if(r(1))return a(t,n+1),!1;const s=t+1;e.fragments[s]&&a(s,0)}else{const r=e.fragments[t].length;if(n+1<r)return a(t,r-1),!1;const s=e.fragments[t+1];s&&a(t+1,s.length-1)}})),e.on("prev",(({fragment:s=!0})=>{if(r(-1)&&s)return a(t,n-1),!1;const i=t-1;e.fragments[i]&&a(i,e.fragments[i].length-1)})),e.on("slide",(({index:t,fragment:n})=>{let r=0;if(void 0!==n){const a=e.fragments[t];if(a){const{length:e}=a;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}a(t,r)})),a(0,0)}var r,a={exports:{}};r=a,function(){var e="undefined"!=typeof window&&void 0!==window.document?window.document:{},t=r.exports,n=function(){for(var t,n=[["requestFullscreen","exitFullscreen","fullscreenElement","fullscreenEnabled","fullscreenchange","fullscreenerror"],["webkitRequestFullscreen","webkitExitFullscreen","webkitFullscreenElement","webkitFullscreenEnabled","webkitfullscreenchange","webkitfullscreenerror"],["webkitRequestFullScreen","webkitCancelFullScreen","webkitCurrentFullScreenElement","webkitCancelFullScreen","webkitfullscreenchange","webkitfullscreenerror"],["mozRequestFullScreen","mozCancelFullScreen","mozFullScreenElement","mozFullScreenEnabled","mozfullscreenchange","mozfullscreenerror"],["msRequestFullscreen","msExitFullscreen","msFullscreenElement","msFullscreenEnabled","MSFullscreenChange","MSFullscreenError"]],r=0,a=n.length,s={};r<a;r++)if((t=n[r])&&t[1]in e){for(r=0;r<t.length;r++)s[n[0][r]]=t[r];return s}return!1}(),a={change:n.fullscreenchange,error:n.fullscreenerror},s={request:function(t,r){return new Promise(function(a,s){var i=function(){this.off("change",i),a()}.bind(this);this.on("change",i);var o=(t=t||e.documentElement)[n.requestFullscreen](r);o instanceof Promise&&o.then(i).catch(s)}.bind(this))},exit:function(){return new Promise(function(t,r){if(this.isFullscreen){var a=function(){this.off("change",a),t()}.bind(this);this.on("change",a);var s=e[n.exitFullscreen]();s instanceof Promise&&s.then(a).catch(r)}else t()}.bind(this))},toggle:function(e,t){return this.isFullscreen?this.exit():this.request(e,t)},onchange:function(e){this.on("change",e)},onerror:function(e){this.on("error",e)},on:function(t,n){var r=a[t];r&&e.addEventListener(r,n,!1)},off:function(t,n){var r=a[t];r&&e.removeEventListener(r,n,!1)},raw:n};n?(Object.defineProperties(s,{isFullscreen:{get:function(){return Boolean(e[n.fullscreenElement])}},element:{enumerable:!0,get:function(){return e[n.fullscreenElement]}},isEnabled:{enumerable:!0,get:function(){return Boolean(e[n.fullscreenEnabled])}}}),t?r.exports=s:window.screenfull=s):t?r.exports={isEnabled:!1}:window.screenfull={isEnabled:!1}}();var s=a.exports;function i(e){e.fullscreen=()=>{s.isEnabled&&s.toggle(document.body)},document.addEventListener("keydown",(t=>{"f"!==t.key&&"F11"!==t.key||t.altKey||t.ctrlKey||t.metaKey||!s.isEnabled||(e.fullscreen(),t.preventDefault())}))}function o(e=2e3){return t=>{let n;function r(){n&&clearTimeout(n),n=setTimeout((()=>{t.parent.classList.add("bespoke-marp-inactive"),t.fire("marp-inactive")}),e),t.parent.classList.contains("bespoke-marp-inactive")&&(t.parent.classList.remove("bespoke-marp-inactive"),t.fire("marp-active"))}document.addEventListener("mousedown",r),document.addEventListener("mousemove",r),document.addEventListener("touchend",r),setTimeout(r,0)}}const l=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"];function c(e){e.parent.addEventListener("keydown",(e=>{if(!e.target)return;const t=e.target;(l.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()}))}function d(e){window.addEventListener("load",(()=>{for(const t of e.slides){const e=t.querySelector("[data-marp-fitting]")?"":"hideable";t.setAttribute("data-bespoke-marp-load",e)}}))}var u;function f({interval:e=250}={}){return t=>{document.addEventListener("keydown",(e=>{if(" "===e.key&&e.shiftKey)t.prev();else if("ArrowLeft"===e.key||"ArrowUp"===e.key||"PageUp"===e.key)t.prev({fragment:!e.shiftKey});else if(" "!==e.key||e.shiftKey)if("ArrowRight"===e.key||"ArrowDown"===e.key||"PageDown"===e.key)t.next({fragment:!e.shiftKey});else if("End"===e.key)t.slide(t.slides.length-1,{fragment:-1});else{if("Home"!==e.key)return;t.slide(0)}else t.next();e.preventDefault()}));let n,r,a=0;t.parent.addEventListener("wheel",(s=>{let i=!1;const o=(e,t)=>{e&&(i=i||function(e,t){return function(e,t){const n=t===u.X?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]}(e,t)&&function(e,t){const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r}(getComputedStyle(e),t)}(e,t)),(null==e?void 0:e.parentElement)&&o(e.parentElement,t)};if(0!==s.deltaX&&o(s.target,u.X),0!==s.deltaY&&o(s.target,u.Y),i)return;s.preventDefault();const l=Math.sqrt(Math.pow(s.deltaX,2)+Math.pow(s.deltaY,2));if(void 0!==s.wheelDelta){if(void 0===s.webkitForce&&Math.abs(s.wheelDelta)<40)return;if(s.deltaMode===s.DOM_DELTA_PIXEL&&l<4)return}else if(s.deltaMode===s.DOM_DELTA_PIXEL&&l<12)return;r&&clearTimeout(r),r=setTimeout((()=>{n=0}),e);const c=Date.now()-a<e,d=l<=n;if(n=l,c||d)return;let f;(s.deltaX>0||s.deltaY>0)&&(f="next"),(s.deltaX<0||s.deltaY<0)&&(f="prev"),f&&(t[f](),a=Date.now())}))}}!function(e){e.X="X",e.Y="Y"}(u||(u={}));const p=(...e)=>history.replaceState(...e),m="data-bespoke-view",g="presenter",h="next",v=["",g,h],b=(e,{protocol:t,host:n,pathname:r,hash:a}=location)=>{const s=e.toString();return`${t}//${n}${r}${s?"?":""}${s}${a}`},w=()=>{const e=document.body.getAttribute(m);if(v.includes(e))return e;throw new Error("View mode is not assigned.")},y=e=>new URLSearchParams(location.search).get(e),k=(e,t={})=>{var n;const r=Object.assign({location:location,setter:p},t),a=new URLSearchParams(r.location.search);for(const t of Object.keys(e)){const n=e[t];"string"==typeof n?a.set(t,n):a.delete(t)}try{r.setter(Object.assign({},null!==(n=window.history.state)&&void 0!==n?n:{}),"",b(a,r.location))}catch(e){console.error(e)}},E={available:(()=>{try{return localStorage.setItem("bespoke-marp","bespoke-marp"),localStorage.removeItem("bespoke-marp"),!0}catch(e){return console.warn("Warning: Using localStorage is restricted in the current host so some features may not work."),!1}})(),get:e=>{try{return localStorage.getItem(e)}catch(e){return null}},set:(e,t)=>{try{return localStorage.setItem(e,t),!0}catch(e){return!1}},remove:e=>{try{return localStorage.removeItem(e),!0}catch(e){return!1}}};function x(e=".bespoke-marp-osc"){const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[data-bespoke-marp-osc=${JSON.stringify(e)}]`).forEach(n)};return s.isEnabled||n("fullscreen",(e=>e.style.display="none")),E.available||n("presenter",(e=>{e.disabled=!0,e.title="Presenter view is disabled due to restricted localStorage."})),e=>{t.addEventListener("click",(t=>{if(t.target instanceof HTMLElement){const{bespokeMarpOsc:n}=t.target.dataset;switch(n&&t.target.blur(),n){case"next":e.next({fragment:!t.shiftKey});break;case"prev":e.prev({fragment:!t.shiftKey});break;case"fullscreen":"function"==typeof e.fullscreen&&s.isEnabled&&e.fullscreen();break;case"presenter":e.openPresenterView()}}})),e.parent.appendChild(t),e.on("activate",(({index:t})=>{n("page",(n=>n.textContent=`Page ${t+1} of ${e.slides.length}`))})),e.on("fragment",(({index:t,fragments:r,fragmentIndex:a})=>{n("prev",(e=>e.disabled=0===t&&0===a)),n("next",(n=>n.disabled=t===e.slides.length-1&&a===r.length-1))})),e.on("marp-active",(()=>t.removeAttribute("aria-hidden"))),e.on("marp-inactive",(()=>t.setAttribute("aria-hidden","true"))),s.isEnabled&&s.onchange((()=>n("fullscreen",(e=>e.classList.toggle("exit",s.isEnabled&&s.isFullscreen)))))}}function L(e){window.addEventListener("message",(t=>{if(t.origin!==window.origin)return;const[n,r]=t.data.split(":");if("navigate"===n){const[t,n]=r.split(",");let a=Number.parseInt(t,10),s=Number.parseInt(n,10)+1;s>=e.fragments[a].length&&(a+=1,s=0),e.slide(a,{fragment:s})}}))}function S(e){if(!(e=>e.syncKey&&"string"==typeof e.syncKey)(e))throw new Error("The current instance of Bespoke.js is invalid for Marp bespoke presenter plugin.");Object.defineProperties(e,{openPresenterView:{enumerable:!0,value:M},presenterUrl:{enumerable:!0,get:I}}),E.available&&document.addEventListener("keydown",(t=>{"p"!==t.key||t.altKey||t.ctrlKey||t.metaKey||(t.preventDefault(),e.openPresenterView())}))}function M(){const e=Math.max(Math.floor(.85*window.innerWidth),640),t=Math.max(Math.floor(.85*window.innerHeight),360);return window.open(this.presenterUrl,`bespoke-marp-presenter-${this.syncKey}`,`width=${e},height=${t},menubar=no,toolbar=no`)}function I(){const e=new URLSearchParams(location.search);return e.set("view","presenter"),e.set("sync",this.syncKey),b(e)}var P=["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"];let O=e=>String(e).replace(/[&<>"']/g,(e=>`&${F[e]};`)),F={"&":"amp","<":"lt",">":"gt",'"':"quot","'":"apos"},$="dangerouslySetInnerHTML",A={className:"class",htmlFor:"for"},T={};function q(e,t){let n=[],r="";t=t||{};for(let e=arguments.length;e-- >2;)n.push(arguments[e]);if("function"==typeof e)return t.children=n.reverse(),e(t);if(e){if(r+="<"+e,t)for(let e in t)!1!==t[e]&&null!=t[e]&&e!==$&&(r+=` ${A[e]?A[e]:O(e)}="${O(t[e])}"`);r+=">"}if(-1===P.indexOf(e)){if(t[$])r+=t[$].__html;else for(;n.length;){let e=n.pop();if(e)if(e.pop)for(let t=e.length;t--;)n.push(e[t]);else r+=!0===T[e]?e:O(e)}r+=e?`</${e}>`:""}return T[r]=!0,r}const K=({children:e})=>q(null,null,...e),N="bespoke-marp-presenter-container",C="bespoke-marp-presenter-next",D="bespoke-marp-presenter-next-container",j="bespoke-marp-presenter-note-container",X="bespoke-marp-presenter-info-container",R="bespoke-marp-presenter-info-page",U="bespoke-marp-presenter-info-page-text",B="bespoke-marp-presenter-info-page-prev",V="bespoke-marp-presenter-info-page-next",Y="bespoke-marp-presenter-info-time",H="bespoke-marp-presenter-info-timer";function z(e){const{title:t}=document;document.title="[Presenter view]"+(t?` - ${t}`:"");const n={},r=e=>(n[e]=n[e]||document.querySelector(`.${e}`),n[e]);document.body.appendChild((e=>{const t=document.createElement("div");return t.className=N,t.appendChild(e),t.insertAdjacentHTML("beforeend",q(K,null,q("div",{class:D},q("iframe",{class:C,src:"?view=next"})),q("div",{class:j}),q("div",{class:X},q("div",{class:R},q("button",{class:B,tabindex:"-1",title:"Previous"},"Previous"),q("span",{class:U}),q("button",{class:V,tabindex:"-1",title:"Next"},"Next")),q("time",{class:Y,title:"Current time"}),q("div",{class:H})))),t})(e.parent)),(e=>{r(D).addEventListener("click",(()=>e.next()));const t=r(C),n=(a=t,(e,t)=>{var n;return null===(n=a.contentWindow)||void 0===n?void 0:n.postMessage(`navigate:${e},${t}`,"null"===window.origin?"*":window.origin)});var a;t.addEventListener("load",(()=>{r(D).classList.add("active"),n(e.slide(),e.fragmentIndex),e.on("fragment",(({index:e,fragmentIndex:t})=>n(e,t)))}));const s=document.querySelectorAll(".bespoke-marp-note");s.forEach((e=>{e.addEventListener("keydown",(e=>e.stopPropagation())),r(j).appendChild(e)})),e.on("activate",(()=>s.forEach((t=>t.classList.toggle("active",t.dataset.index==e.slide()))))),e.on("activate",(({index:t})=>{r(U).textContent=`${t+1} / ${e.slides.length}`}));const i=r(B),o=r(V);i.addEventListener("click",(t=>{i.blur(),e.prev({fragment:!t.shiftKey})})),o.addEventListener("click",(t=>{o.blur(),e.next({fragment:!t.shiftKey})})),e.on("fragment",(({index:t,fragments:n,fragmentIndex:r})=>{i.disabled=0===t&&0===r,o.disabled=t===e.slides.length-1&&r===n.length-1}));const l=()=>r(Y).textContent=(new Date).toLocaleTimeString();l(),setInterval(l,250)})(e)}function _(e){const t=w();return t===h&&e.appendChild(document.createElement("span")),{"":S,[g]:z,[h]:L}[t]}function J(e){e.on("activate",(t=>{document.querySelectorAll(".bespoke-progress-parent > .bespoke-progress-bar").forEach((n=>{n.style.flexBasis=100*t.index/(e.slides.length-1)+"%"}))}))}const W=e=>{const t=Number.parseInt(e,10);return Number.isNaN(t)?null:t};function G(e={}){const t=Object.assign({history:!0},e);return e=>{let n=!0;const r=e=>{const t=n;try{return n=!0,e()}finally{n=t}},a=(t={fragment:!0})=>{((t,n)=>{const{fragments:r,slides:a}=e,s=Math.max(0,Math.min(t,a.length-1)),i=Math.max(0,Math.min(n||0,r[s].length-1));s===e.slide()&&i===e.fragmentIndex||e.slide(s,{fragment:i})})((W(location.hash.slice(1))||1)-1,t.fragment?W(y("f")||""):null)};e.on("fragment",(({index:e,fragmentIndex:r})=>{n||k({f:0===r||r.toString()},{location:Object.assign(Object.assign({},location),{hash:`#${e+1}`}),setter:(...e)=>t.history?history.pushState(...e):history.replaceState(...e)})})),setTimeout((()=>{a(),window.addEventListener("hashchange",(()=>r((()=>{a({fragment:!1}),k({f:void 0})})))),window.addEventListener("popstate",(()=>{n||r((()=>a()))})),n=!1}),0)}}function Q(e={}){var t;const n=e.key||(null===(t=window.history.state)||void 0===t?void 0:t.marpBespokeSyncKey)||Math.random().toString(36).slice(2),r=`bespoke-marp-sync-${n}`;var a;a={marpBespokeSyncKey:n},k({},{setter:(e,...t)=>p(Object.assign(Object.assign({},e),a),...t)});const s=()=>{const e=E.get(r);return e?JSON.parse(e):Object.create(null)},i=e=>{const t=s(),n=Object.assign(Object.assign({},t),e(t));return E.set(r,JSON.stringify(n)),n},o=()=>{window.removeEventListener("pageshow",o),i((e=>({reference:(e.reference||0)+1})))};return e=>{o(),Object.defineProperty(e,"syncKey",{value:n,enumerable:!0});let t=!0;setTimeout((()=>{e.on("fragment",(e=>{t&&i((()=>({index:e.index,fragmentIndex:e.fragmentIndex})))}))}),0),window.addEventListener("storage",(n=>{if(n.key===r&&n.oldValue&&n.newValue){const r=JSON.parse(n.oldValue),a=JSON.parse(n.newValue);if(r.index!==a.index||r.fragmentIndex!==a.fragmentIndex)try{t=!1,e.slide(a.index,{fragment:a.fragmentIndex})}finally{t=!0}}}));const a=()=>{const{reference:e}=s();void 0===e||e<=1?E.remove(r):i((()=>({reference:e-1})))};window.addEventListener("pagehide",(e=>{e.persisted&&window.addEventListener("pageshow",o),a()})),e.on("destroy",a)}}function Z({slope:e=Math.tan(-35*Math.PI/180),swipeThreshold:t=30}={}){return n=>{let r;const a=n.parent,s=e=>{const t=a.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};a.addEventListener("touchstart",(e=>{r=1===e.touches.length?s(e.touches[0]):void 0}),{passive:!0}),a.addEventListener("touchmove",(e=>{if(r)if(1===e.touches.length){e.preventDefault();const t=s(e.touches[0]),n=t.x-r.x,a=t.y-r.y;r.delta=Math.sqrt(Math.pow(Math.abs(n),2)+Math.pow(Math.abs(a),2)),r.radian=Math.atan2(n,a)}else r=void 0})),a.addEventListener("touchend",(a=>{if(r){if(r.delta&&r.delta>=t&&r.radian){let t=r.radian-e;t=(t+Math.PI)%(2*Math.PI)-Math.PI,n[t<0?"next":"prev"](),a.stopPropagation()}r=void 0}}),{passive:!0})}}function ee(e,t,n,r){return new(n||(n=Promise))((function(a,s){function i(e){try{l(r.next(e))}catch(e){s(e)}}function o(e){try{l(r.throw(e))}catch(e){s(e)}}function l(e){var t;e.done?a(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(i,o)}l((r=r.apply(e,t||[])).next())}))}let te;const ne=()=>(void 0===te&&(te="wakeLock"in navigator&&navigator.wakeLock),te),re=()=>ee(void 0,void 0,void 0,(function*(){const e=ne();if(e)try{return yield e.request("screen")}catch(e){console.warn(e)}return null}));function ae(){return ee(this,void 0,void 0,(function*(){if(!ne())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&re()};return document.addEventListener("visibilitychange",t),document.addEventListener("fullscreenchange",t),e=yield re(),e}))}!function(r=document.getElementById("p")){document.body.setAttribute(m,(()=>{const e=y("view");return e===h||e===g?e:""})());const a=(e=>{const t=y(e);return k({[e]:void 0}),t})("sync")||void 0,s=!1,l=!0;e(r,((...e)=>{const t=v.findIndex((e=>w()===e));if(t<0)throw new Error("Invalid view");return e.map((([e,n])=>e[t]&&n)).filter((e=>e))})([[l,l,s],Q({key:a})],[[l,l,l],_(r)],[[l,l,s],c],[[l,l,l],t],[[l,s,s],o()],[[l,l,l],d],[[l,l,l],G({history:!1})],[[l,l,s],f()],[[l,l,s],i],[[l,s,s],J],[[l,l,s],Z()],[[l,s,s],x()],[[l,l,l],n],[[l,l,s],ae]))}()}();</script></body></html>

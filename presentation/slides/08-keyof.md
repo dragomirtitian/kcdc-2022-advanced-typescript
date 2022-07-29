@@ -1,0 +1,63 @@
+---
+title: Fun with conditional types
+marp: true
+theme: kubi
+footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg Finance L.P. All rights reserved. ![techatbloomberg.com](./media/bloomberg.png)'
+---
+
+### Getting the keys of a type
+
+<question>
+
+How can we get a type with all the keys in an object type ?
+
+```ts
+
+type Person = { name: string; age: number }
+type PersonKeys = "name" | "age"
+
+```
+</question>
+
+<answer>
+
+Using the `keyof` operator
+
+</answer>
+
+---
+
+### Getting the keys of an object type
+
+<question>
+Why does `Object.keys` return `string[]` and not `keyof T`
+</question>
+<answer>
+Because object types describe the minimal set of properties for a value, other properties might exist at runtime.
+</answer>
+
+---
+
+### Getting the type of a variable
+
+<question>
+
+How can we get a type of a variable?
+```ts
+let env = {
+    "SERVER": "url",
+    "PORT": 8080
+}
+type Env = {
+    "SERVER": string,
+    "PORT": number
+}
+```
+
+</question>
+<answer>
+
+Use the `typeof` operator
+
+</answer>
+

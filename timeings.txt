@@ -1,0 +1,36 @@
+hour 1h 15m (YT - 50m)
+5 min - Intro (1-3) 3 slides
+5 min Set oprations 3 slides 
+5 min Object unions - narrowing 3 slides - 2 code samples (01-2, 01) 
+5 min Literal type - 3 slides - 1 code sample (02)
+3 min Strict null checking - 2 slides
+5 min Discriminated unions - 5 slides + 1 code sample (03) 
+*** Add object intersection example
+10 min Intersection And Union Reduction - 7 slides + 3 code samples (04-1, 04-2, 04-3)
+10 min branded types 3 slides + 2 code samples (05-1, 05-02)
+10 min excercise
+10 min break
+
+hour 1h 15 (YT - 50 min)
+10 min keyof/ typeof / index 5 slides - 3 code samples (06, 07, 08)
+ 5 min - Predefined mapped types  - 1 slide (dense) - 1 code sample (09)
+ 5 min Add predefinted conditional types here too 
+10 min Tuple types
+10 min Custom mapped types - 2 slides - 1 code sample
+10 min Homomorphic mapped types 3 slides - 2 code samples
+10 min excercise
+10 min break
+
+
+hour 1h 15 (YT - 
+ 10 min - basic conditional types  2 - code samples
+ 10 min - filtering a unions
+ 10 min - key of union - excercise togheter 
+ 10 min - strict union - excercise togheter 
+ 5 min - infer and sum up of conditional types 
+ 5 min - DeepReadonly -execrise togheter
+ 5 min - string manipulation basics
+ 10 min recursive conditional type 
+ 
+ 
+I226

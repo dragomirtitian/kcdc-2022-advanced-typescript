@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "@marp-team/marp-cli": "^1.1.1"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "dev": "marp --server --html --watch --theme ./themes/kubi.css --bespoke.progress true slides"
+  }
+}

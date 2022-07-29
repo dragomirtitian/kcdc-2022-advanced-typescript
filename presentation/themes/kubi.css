@@ -1,0 +1,265 @@
+/* @theme kubi */
+
+@import-theme 'gaia';
+
+
+.two-columns ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+pre {
+    margin-top: 1em;
+}
+.language-ts .hljs-function .hljs-title,
+.language-ts .hljs-subst,
+.language-ts {
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    padding: 0px;
+}
+.language-ts .hljs-function .hljs-keyword,
+.language-ts .hljs-keyword{
+    color: #0000ff;
+}
+.language-ts .hljs-built_in{
+    color: #365bca;
+}
+
+.language-ts .hljs-params{
+    color: unset;
+}
+
+.language-ts .hljs-string {
+    color: #a31515;
+}
+question>p {
+    display: inline;
+    margin-top: 0px;
+}
+question {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+question::before {
+    content: "Question:";
+    font-weight: bold;
+}
+
+answer {
+    display: block;;
+}
+answer::before {
+    content: "Answer:";
+    font-weight: bold;
+}
+answer>p {
+    display: inline;
+    margin-top: 0px;
+}
+
+section {
+    background: white;
+    color: #223355;
+}
+
+li>pre {
+    margin-top: 0px;
+}
+
+section h1,
+h2,
+h3 {
+    color: #182848;
+}
+
+footer {
+    height: auto;
+    padding: 0 8px 2px 8px;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: 0.9px;
+    text-align: left;
+}
+
+footer img {
+    display: block;
+    height: 31px;
+    margin-bottom: 8px;
+    margin-left: -8px;
+}
+
+footer img:last-child {
+    height: 28px;
+    position: fixed;
+    right: 12px;
+    bottom: 8px;
+}
+
+/* make title emojis bigger */
+h1 > img[data-marp-twemoji] {
+    height: 3em;
+    width: 3em;
+}
+
+:not(pre) > code {
+    color: rgb(190, 68, 135);
+    background: #eaeaea;
+    border-radius: 8px;
+}
+
+pre > code {
+    background: #282a36;
+    color: #f8f8f2;
+}
+
+.hljs-title {
+    text-decoration: none !important;
+}
+
+section.lead {
+    background: #4b6cb7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+section.lead h1 {
+    color: white;
+}
+
+section.lead.title h1 {
+    font-size: 96px;
+}
+
+section.lead h1 {
+    font-size: 96px;
+}
+
+section.lead.image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.image figcaption {
+    font-size: 11px;
+    position: fixed;
+    opacity: .8;
+    right: 16px;
+    bottom: 16px;
+    text-align: right;
+}
+
+section.about-us {
+    columns: 2;
+    text-align: center;
+}
+
+section.about-us p > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+section.about-us ul {
+    margin-top: 32px;;
+    text-align: left;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+/* make nested lists smaller */
+li > ul {
+    font-size: 32px;
+}
+
+/* custom classes */
+.added {
+    color: rgb(16, 172, 112);
+    font-family: monospace;
+}
+.removed {
+    color: rgb(235, 61, 61);
+    font-family: monospace;
+}
+
+/* highlight.js */
+
+/*
+
+Dracula Theme v1.2.0
+
+https://github.com/zenorocha/dracula-theme
+
+Copyright 2015, All rights reserved
+
+Code licensed under the MIT license
+http://zenorocha.mit-license.org
+
+@author Éverton Ribeiro <nuxlli@gmail.com>
+@author Zeno Rocha <hi@zenorocha.com>
+
+*/
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #282a36;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+    color: #8be9fd;
+}
+
+.hljs-function .hljs-keyword {
+    color: #ff79c6;
+}
+
+.hljs,
+.hljs-subst {
+    color: #f8f8f2;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-name,
+.hljs-type,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+    color: #f1fa8c;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion,
+.hljs-meta {
+    color: #6272a4;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-type,
+.hljs-name,
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
