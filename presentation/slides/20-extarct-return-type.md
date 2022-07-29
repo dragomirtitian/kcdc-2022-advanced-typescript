@@ -5,7 +5,7 @@ theme: kubi
 footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg Finance L.P. All rights reserved. ![techatbloomberg.com](./media/bloomberg.png)'
 ---
 
-### Inference behavior of conditional types
+### Inference Behavior of Conditional Types
 
 <question>
 Give a type that contains functions that return promises, can we create a type with the same keys but the value of the promises as the property types?
@@ -30,7 +30,7 @@ Yes, we can use **conditional types**
 </answer>
 
 --- 
-### Anatomy of conditional types
+### Anatomy of Conditional Types
 
 ```
 T extends B<infer U1, infer U2, ... infer Un>
@@ -45,7 +45,7 @@ T extends B<infer U1, infer U2, ... infer Un>
 * On the false branch we can't use them (since they weren't extracted)
 
 ----
-### Conditional type summary
+### Conditional Type Summary
 
 * Conditional types have 3 behaviors
     * The type conditional behavior

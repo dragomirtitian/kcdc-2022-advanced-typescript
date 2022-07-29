@@ -5,7 +5,7 @@ theme: kubi
 footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg Finance L.P. All rights reserved. ![techatbloomberg.com](./media/bloomberg.png)'
 ---
 
-### Branded types
+### Branded Types
 
 <question>
 
@@ -29,7 +29,7 @@ We can use branded types
 
 ----
 
-### What are branded types
+### What are branded types?
 
 * A primitive type intersected with an object
 * The object type that ensures that the resulting type is no longer compatible with the primitive type
@@ -38,7 +38,7 @@ We can use branded types
 
 ---
 
-### Other applications
+### Other Applications
 
 * Generally enforce constraints on primitive types that can be traced in the type system
     * A `number` is a database id

@@ -18,7 +18,7 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 
 ----
 
-### What is a tuple type
+### What is a tuple type?
 
 * At runtime it is an array value 
 * They are more strict: 
@@ -52,7 +52,7 @@ Unions of tuple types can help
 
 ----
 
-### Can we copy parameters from another function
+### Can we copy parameters from another function?
 
 <question>
 Can we copy parameters from another function?

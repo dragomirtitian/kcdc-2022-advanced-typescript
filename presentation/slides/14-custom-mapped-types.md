@@ -5,7 +5,7 @@ theme: kubi
 footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg Finance L.P. All rights reserved. ![techatbloomberg.com](./media/bloomberg.png)'
 ---
 
-### Custom mapped types
+### Custom Mapped Types
 
 <question>
 
@@ -53,7 +53,7 @@ Use a custom mapped type in conjunction with the conditional type `ReturnType`
 
 ---
 
-### Homomorphic mapped types 
+### Homomorphic Mapped Types 
 
 `{ [P in keyof T]: U }`
 `type G<K extends keyof T> = { [P in K]: U}`
@@ -65,7 +65,7 @@ Use a custom mapped type in conjunction with the conditional type `ReturnType`
 
 ---
 
-### Manipulating modifiers 
+### Manipulating Modifiers 
 
 * `{ readonly  [P in keyof T]: U }` - add `readonly` modifier
 * `{ -readonly [P in keyof T]: U }` - remove `readonly` modifier

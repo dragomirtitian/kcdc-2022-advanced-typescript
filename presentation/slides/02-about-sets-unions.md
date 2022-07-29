@@ -5,7 +5,7 @@ theme: kubi
 footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg Finance L.P. All rights reserved. ![techatbloomberg.com](./media/bloomberg.png)'
 ---
 
-### Sets And Types
+### Sets and Types
 
 * Types are sets:
     * `{ foo: number }` - the set of all values that are objects and have a `foo` property of type `number`
