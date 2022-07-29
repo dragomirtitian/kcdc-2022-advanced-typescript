@@ -19,9 +19,10 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 
 **Titian Cernicova-Dragomir**
 
+- 🏢 Bloomberg Employee on the JavaScript Infrastructure Team
 - 🧩 TypeScript compiler contributor
 - ✨ Fan of TypeScript
-- 💡 Answers TypeScript questions on [StackOverflow](stackoverflow.com)
+- 💡 Answers TypeScript questions on [Stack Overflow](stackoverflow.com)
 
 ---
 
