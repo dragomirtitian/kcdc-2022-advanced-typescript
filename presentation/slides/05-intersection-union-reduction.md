@@ -5,7 +5,7 @@ theme: kubi
 footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg Finance L.P. All rights reserved. ![techatbloomberg.com](./media/bloomberg.png)'
 ---
 
-### Intersection And Union Reduction
+### Intersection and Union Reduction
 
 <question>
 
@@ -20,7 +20,7 @@ Use an intersection
 
 ----
 
-### Intersection And Union Reduction -  Rules
+### Intersection and Union Reduction -  Rules
 
 * `("yes" | "no" | 0 | 1) & string`
 * Intersection goes on the inside
@@ -30,7 +30,7 @@ Use an intersection
 
 ---
 
-### Intersection And Union Reduction -  Rules
+### Intersection and Union Reduction -  Rules
 
 - `("yes" | "no" | 0 | 1) & string`
 - `("yes" & string) | ("no" & string) | (0 & string) | (1 & string)`
@@ -43,7 +43,7 @@ Use an intersection
 
 ---
 
-### Intersection And Union Reduction -  Rules
+### Intersection and Union Reduction -  Rules
 
 - `("yes" | "no" | 0 | 1) & string`
 - `("yes" & string) | ("no" & string) | (0 & string) | (1 & string)`
@@ -112,7 +112,7 @@ Naive answer: `string | "red" | "blue"`
 
 ---
 
-### Intersection And Union Reduction -  Rules
+### Intersection and Union Reduction -  Rules
 
 * `string  | "red" | "blue"`
 * Subtype reduction: 

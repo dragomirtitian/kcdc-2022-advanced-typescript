@@ -6,7 +6,7 @@ hour 1h 15m (YT - 50m)
 3 min Strict null checking - 2 slides
 5 min Discriminated unions - 5 slides + 1 code sample (03) 
 *** Add object intersection example
-10 min Intersection And Union Reduction - 7 slides + 3 code samples (04-1, 04-2, 04-3)
+10 min Intersection and Union Reduction - 7 slides + 3 code samples (04-1, 04-2, 04-3)
 10 min branded types 3 slides + 2 code samples (05-1, 05-02)
 10 min excercise
 10 min break
