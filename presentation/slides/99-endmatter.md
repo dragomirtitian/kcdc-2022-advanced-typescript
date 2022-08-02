@@ -5,6 +5,15 @@ theme: kubi
 footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg Finance L.P. All rights reserved. ![techatbloomberg.com](./media/bloomberg.png)'
 ---
 
+### 🎉 We are hiring! 🎉
+
+* We are looking for people to help us integrate TypeScript with our developer platforms.
+* https://careers.bloomberg.com/job/detail/81580
+    ![height:200px](./media/job-qr.png)
+* Come talk to me in the break if you are interested.
+
+---
+
 <!-- _class: lead title -->
 <!-- _footer: '' -->
 
