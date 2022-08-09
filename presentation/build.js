@@ -25,6 +25,7 @@ function main() {
 
     writeFileSync(MERGED_SLIDE_PATH, content);
     execSync(`${join('.', 'node_modules', '.bin', 'marp')} --html --theme themes/kubi.css --bespoke.progress true ${MERGED_SLIDE_PATH}`);
+    execSync(`${join('.', 'node_modules', '.bin', 'marp')} --pdf --theme themes/kubi.css --bespoke.progress true ${MERGED_SLIDE_PATH}`);
     copyFileSync(RENDERED_SLIDE_PATH, PUBLISHED_SLIDE_PATH);
     
     if (process.platform === "win32" ) {
