@@ -1,20 +1,19 @@
-
 export {}
+type P = Parameters<typeof wrapWithLog>
 
-function promiseArgs<T extends any[], R>(fn: (...a: T) => R) {
-  return async (...a: any[] /* Promisify T */) => {
-    return await fn(... (await Promise.all(a)) as T);
+function wrapWithLog(message: string, fn: any) {
+  return (...a: any) => {
+    console.log(`Executing ${message}`);
+    try {
+      return fn();
+    } finally {
+      console.log(`Executed ${message}`);
+    }
   }
 }
 
 function connect(host: string, port: number) {
   console.log(`...Connecting to ${host}:${port}`)
 }
-const host = Promise.resolve("connect")
-const port = Promise.resolve(8080)
 
-const promisifyedConnect = promiseArgs(connect);
-promisifyedConnect(host, port);
-promisifyedConnect(port, host);
-
-
+const loggedConnect = wrapWithLog("connect", connect)

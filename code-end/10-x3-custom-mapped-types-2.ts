@@ -14,15 +14,12 @@ getValues({
 })
 
 type EnvGetters = {
-    readonly "SERVER"?: () => string,
+    "SERVER": () => string,
     "PORT": () => number
 }
 
-type R = NonNullable< (() => string) | undefined>
-
-type K = keyof EnvGetters
 type Env = {
-    [P in K]: ReturnType<NonNullable<EnvGetters[P]>>
+    [P in keyof EnvGetters]: ReturnType<NonNullable<EnvGetters[P]>>
 }
 
 

@@ -12,9 +12,4 @@ type Person = {
     speciality: string
 }
 
-type Doctor = ({
-    type: "d"
-    name: string;
-    age: string;
-    speciality: string
-} & { type: "d" } ) 
+type Doctor = Person & { type: "d" } 

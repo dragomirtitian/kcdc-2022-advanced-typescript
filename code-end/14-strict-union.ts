@@ -16,3 +16,5 @@ let o: Person = {
     preferredMedium: "",
     specialty: ""
 }
+
+export {}

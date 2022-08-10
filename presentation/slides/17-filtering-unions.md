@@ -49,7 +49,7 @@ We can use the **predefined conditional types** `Extract` and `Exclude`
   ```
 * ```ts
   (0 extends string ? 0 :never) |
-  (1 extends string ? 0 :never) |
+  (1 extends string ? 1 :never) |
   ("yes" extends string ? "yes" :never) |
   ("no" extends string ? "no" :never)
   ```

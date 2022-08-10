@@ -1,26 +1,41 @@
 
-type PromiseObject<T> = {}  & {
+type AllResults<T> = {}  & {
     [P in keyof T]: T[P] extends () => Promise<infer R> ? R: never
 }
 
+type AllArgs<T> = {} & {
+    [P in keyof T]: T[P] extends (...a: infer P) => any ? P: never
+}
 
-async function promiseAllObject<T extends Record<string, () => Promise<any>>>(p: T): Promise<PromiseObject<T>> {
+function invokeAll<
+    T extends Record<string, (...a: any[]) => any>
+>(p: T, args: AllArgs<T>): AllResults<T> {
     let entries = Object.entries(p)
-        .map(async ([k, v]) => [k, await v()] as [string, any]);
+        .map(([k, v]) => [k, v(...args[k])] as [string, any]);
 
-    return Object.fromEntries(await Promise.all(entries)) as PromiseObject<T>;
+    return Object.fromEntries(entries) as AllResults<T>;
 }
 
 async function main() {
-    // P should be types as:
     // let p: {
     //     age: number;
     //     name: string;
-    //     lastBane: string;
+    //     lastName: string;
     // }
-    let p = await promiseAllObject({
-        age: () => Promise.resolve(0),
-        name: () => Promise.resolve("John"),
-        lastBane: () => Promise.resolve("Oliver"),
-    })   
+    
+    //  args: {
+    //     age: [v: number];
+    //     name: [n: string];
+    //     lastName: [n: string];
+    // }
+
+    let p = invokeAll({
+        age: (v: number) => v + 1,
+        name: (n: string) => n.toUpperCase(),
+        lastName: (n: string) => n.toLowerCase(),
+    }, {
+        age: [1],
+        lastName: ["John"],
+        name: ["Oliver"]
+    })
 }

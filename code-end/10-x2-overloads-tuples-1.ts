@@ -1,17 +1,14 @@
 export {}
+declare function internal(host: string, port: number): void;
 
-function wrapWithLog<T extends any[], R>(mesage: string, fn: (...a: T) => R) {
-  return (...a: T) => {
-    console.log(`Executing ${mesage}`);
-    try {
-      return fn(...a);
-    } finally {
-      console.log(`Executed ${mesage}`);
-    }
+function connect(...args: 
+  | [cfg: { host: string, port: number }]
+  | [host: string, port: number]) {
+  if (args.length === 2) {
+    const [host, port] = args;
+    internal(host, port);
+  } else {
+    const [cfg] = args;
+    internal(cfg.host, cfg.port);
   }
 }
-
-function connect(host: string, port: number) {
-  console.log(`...Connecting to ${host}:${port}`)
-}
-const loggedConnect = wrapWithLog("connect", connect)

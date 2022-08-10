@@ -23,7 +23,8 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 * At runtime it is an array value 
 * They are more strict: 
     * They have a fixed length
-    * Each element can have a different type 
+    * Each element can have a different type
+    * Each element can be labeled 
 
 ----
 
@@ -60,8 +61,9 @@ Can we copy parameters from another function?
 ```ts
 declare function connect(host: string, port: number): void
 
-function connectWithMessage(host: string, port: number): void {
+function connectWithMessage(message: string, host: string, port: number): void {
   try {
+    console.log(`Connecting to ${message}`)
     connect(host, port)
   }catch(e) {
     console.log("Error occured");
@@ -148,6 +150,6 @@ function promiseArgs<T extends any[], R>(fn: (...a: T) => R) {
 </question>
 <answer>
 
-Either using `Parameters` & `ReturnType` or direct inference. 
+Either using `Parameters` & `ReturnType` or direct inference, and a custom mapped type 
 
 </answer>

@@ -2,6 +2,14 @@
 
 @import-theme 'gaia';
 
+.two-col-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-col-header p{
+    margin: 0;
+}
 
 .two-columns ul {
     display: grid;

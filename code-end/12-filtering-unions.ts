@@ -11,10 +11,10 @@ type LooseBoolean = "yes" | "no" | 0 | 1;
 
 type Extract2<T, U> = T extends U ? T : never;
 
-type StringLooseBolean2 = Extract2<LooseBoolean, string>
-type StringLooseBolean3 = LooseBoolean extends string ? LooseBoolean : never; // ❌
+type StringLooseBoolean2 = Extract2<LooseBoolean, string>
+type StringLooseBoolean3 = LooseBoolean extends string ? LooseBoolean : never; // ❌
 
-type StringLooseBolean = Extract<LooseBoolean, string>
-type NumberLooseBolean = Exclude<LooseBoolean, string>
+type StringLooseBoolean = Extract<LooseBoolean, string>
+type NumberLooseBoolean = Exclude<LooseBoolean, string>
 
 

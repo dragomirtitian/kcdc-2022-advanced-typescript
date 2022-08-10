@@ -1,18 +1,16 @@
-export {}
+declare function internal(host: string, port: number): void;
 
-function wrapWithLog(mesage: string, fn: any) {
-  return (...a: any) => {
-    console.log(`Executing ${mesage}`);
-    try {
-      return fn();
-    } finally {
-      console.log(`Executed ${mesage}`);
-    }
+function connect(cfg: { host: string, port: number }): void
+function connect(host: string, port: number): void
+function connect(
+  cfgOrHost: { host: string, port: number } | string,
+  maybePort?: number
+) {
+  if (typeof cfgOrHost === "string") {
+    const host = cfgOrHost;
+    const port = maybePort! // Yeah, I KNOW it a port TS!
+    internal(host, port);
+  } else {
+    internal(cfgOrHost.host, cfgOrHost.port);
   }
 }
-
-function connect(host: string, port: number) {
-  console.log(`...Connecting to ${host}:${port}`)
-}
-
-const loggedConnect = wrapWithLog("connect", connect)

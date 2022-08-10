@@ -5,6 +5,13 @@ type Engineer = { name: string; field: string }
 
 let doctor: Doctor = { name: "John", specialty: "" field: "" };
 let engineer: Engineer = { name: "John", specialty: "", field: "" };
-let person: Doctor | Engineer = { name: "John", specialty: "", field: "" };
+let person: Doctor | Engineer = 
+    { name: "John", specialty: "", field: "" };
 
 
+
+function printPerson(p: Doctor | Engineer) { 
+    
+}
+
+function withDoctor(p:Doctor) {}

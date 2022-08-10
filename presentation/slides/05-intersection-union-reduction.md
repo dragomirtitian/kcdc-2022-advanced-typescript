@@ -118,4 +118,4 @@ Naive answer: `string | "red" | "blue"`
 * Subtype reduction: 
     * If `D` is a sub set `P` then `D | P` is `P`
       <svg width="200" height="200" viewbox="-5,-5,105,105" style="position: absolute;right:400;bottom: 150"><circle cx="50" cy="50" r="50" stroke="darkblue" stroke-width="1" fill="lightblue" /><circle cx="60" cy="60" r="25" stroke="darkblue" stroke-width="1" fill="#099ffc" /><text font-size="30" font-family="monospace" x="50" y="75">D</text><text font-size="30" font-family="monospace" x="20" y="35">P</text></svg>
-    * `string`
+    * `string | "red" | "blue" -> string` 

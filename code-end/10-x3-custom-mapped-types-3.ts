@@ -8,10 +8,11 @@ export function getValues(getters: EnvGetters, defaultVaues: Env) : Env {
 }
 
 type EnvGetters = {
-    "SERVER"?: () => string,
+    readonly "SERVER"?: () => string,
     "PORT": () => number
 }
+
 type Env = {
-    "SERVER": string,
-    "PORT": number
+    -readonly [P in keyof EnvGetters]-?: ReturnType<NonNullable<EnvGetters[P]>>
 }
+

@@ -7,7 +7,7 @@ footer: '![techatbloomberg.com](./media/techatbloomberg.png) © 2021 Bloomberg F
 
 ### Exercise - Conditional Types
 
-* Scan the playground link or go to `code-start\ex-03.ts` <img src="./media/ex-03-qr.png" style="position:absolute; top:120px; left: 1050px; width: 200px" />
+* Scan the playground link or go to `code-start\ex-04.ts` <img src="./media/ex-04-qr.png" style="position:absolute; top:120px; left: 1050px; width: 200px" />
 
-* Fill in `type PromiseObject<T> = any`  
-    * with a custom conditional type
+* Fill in `type WithDb<T> = any`  
+    * with a custom mapped conditional type
